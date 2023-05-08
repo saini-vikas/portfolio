@@ -1,0 +1,28 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-image: url("./../../../Assets/blury.svg");
+    background-position: initial;
+    
+    
+  }
+
+@media  screen and (max-width:1110px) {
+  .home-container {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+
+@media  screen and (max-width:450px) {
+  .home-container {
+    background-position: bottom;
+    background-size:cover;
+    height: 90vh;
+  }
+}
+
