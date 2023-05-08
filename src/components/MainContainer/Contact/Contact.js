@@ -11,10 +11,10 @@ const Contact = forwardRef((props, ref) => {
 
   const style = {
     iconStyle: {
-      color: darkTheme ? "#cccccc" : "#404040",
+      color: darkTheme ? "#dddddd" : "#353535",
     },
     textStyle: {
-      color: darkTheme ? "#cccccc" : "#404040",
+      color: darkTheme ? "#dddddd" : "#353535",
       fontWeight: "bold",
     },
     shadowStyle: {
@@ -23,7 +23,7 @@ const Contact = forwardRef((props, ref) => {
         : "5px 5px 10px rgba(156, 154, 154 0.6)",
       border: darkTheme
         ? "1px solid rgba(136, 130, 122, 0.3)"
-        : "1px solid rgba(60, 60, 60, 0.1)",
+        : "1px solid rgba(40, 40, 40, 0.2)",
     },
     lineStyle: {
       color: darkTheme ? "#f9f9f9" : "#212529",

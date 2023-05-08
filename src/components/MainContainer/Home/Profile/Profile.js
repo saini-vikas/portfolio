@@ -9,10 +9,10 @@ function Profile(props) {
 
   const style = {
     profileInfoStyle: {
-      color: darkTheme ? "#cccccc" : "#404040",
+      color: darkTheme ? "#dddddd" : "#353535",
     },
     iconStyle: {
-      color: darkTheme ? "#cccccc" : "#404040",
+      color: darkTheme ? "#dddddd" : "#353535",
     },
     lineStyle: {
       boderColor: darkTheme ? "#f9f9f9" : "#212529",

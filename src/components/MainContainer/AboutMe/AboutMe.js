@@ -14,12 +14,11 @@ const AboutMe = forwardRef((props, ref) => {
   const styles = {
     backgroundColor: darkTheme ? "#262626" : "#e7f0f8ef",
     textcolor: {
-      color: darkTheme ? "#cccccc" : "#404040",
+      color: darkTheme ? "#dddddd" : "#353535",
     },
   };
   return (
     <div
-      data-aos="zoom-in"
       className="about-container"
       style={styles}
       id={props.id || ""}
@@ -33,7 +32,7 @@ const AboutMe = forwardRef((props, ref) => {
         <div className="blob2"></div>
         <div className="blob3"></div>
         <div className="blob4"></div>
-        <div className="image">
+        <div className="image" data-aos="zoom-in">
           <div className="card">
             <div className="imgbox">
               <div className="img"></div>
