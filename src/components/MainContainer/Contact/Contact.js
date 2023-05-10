@@ -106,6 +106,7 @@ const Contact = forwardRef((props, ref) => {
                     className="form-control"
                     onChange={(e) => setName(e.target.value)}
                     value={name}
+                    placeholder="Name"
                     id="inputName"
                   ></input>
                 </div>
@@ -122,6 +123,7 @@ const Contact = forwardRef((props, ref) => {
                   <input
                     type="email"
                     name="user-email"
+                    placeholder="Email"
                     className="form-control"
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
@@ -140,6 +142,7 @@ const Contact = forwardRef((props, ref) => {
                 <div className="col-sm-10">
                   <textarea
                     type="text"
+                    placeholder="Enter your message"
                     name="user-message"
                     className="form-control"
                     onChange={(e) => setMessage(e.target.value)}

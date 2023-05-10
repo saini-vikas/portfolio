@@ -6,6 +6,10 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 function Profile(props) {
   const darkTheme = useContext(ThemeContext);
+  const [resumeBtnColor, setResumeBtnColor] = React.useState(
+    darkTheme ? "#212529 !important" : "#f8f8f8 !important"
+  );
+  const [contactBtnColor, setContactBtnColor] = React.useState("#f61be0");
 
   const style = {
     profileInfoStyle: {
@@ -26,16 +30,19 @@ function Profile(props) {
       boxShadow: darkTheme
         ? "2px 5px 5px rgb(22, 21, 21)"
         : "2px 5px 5px rgb(180, 180, 180)",
-      color: darkTheme ? "#212529" : "#f8f8f8",
+      color: resumeBtnColor,
+      transition: "background-color 0.1s ease, color 0.1s ease",
     },
     contactBtn: {
       boxShadow: darkTheme
         ? "2px 5px 5px rgb(22, 21, 21)"
         : "2px 5px 5px rgb(180, 180, 180)",
-      color: darkTheme ? "" : "",
+      color: contactBtnColor,
+      transition: "background-color 0.1s ease, color 0.1s ease",
     },
     downloadStyle: {
-      color: darkTheme ? "#212529" : "#f9f9f9",
+      color: resumeBtnColor,
+      transition: "color 0.1s ease",
     },
     btnTheme: {
       color: darkTheme ? "light" : "dark",
@@ -77,22 +84,33 @@ function Profile(props) {
             <button
               type="link"
               className={
-                "btn btn-lg btn-outline-" + style.btnTheme.color + " resume-btn"
+                "btn btn-lg btn-md btn-outline-" +
+                style.btnTheme.color +
+                " resume-btn"
               }
               href={require("../../../../Assets/Vikas_Saini_CV.pdf")}
               style={style.resumeBtn}
+              onMouseEnter={() => setResumeBtnColor("#369bdd")}
+              onMouseLeave={() => setResumeBtnColor()}
             >
-              <FontAwesomeIcon icon={faDownload} style={style.downloadStyle} />
+              <FontAwesomeIcon
+                icon={faDownload}
+                style={{ color: resumeBtnColor }}
+              />
               Resume
             </button>
             <button
               className={
-                "btn btn-lg btn-outline-" +
+                "btn btn-lg btn-md btn-outline-" +
                 style.btnTheme.color +
                 " contact-btn"
               }
               style={style.contactBtn}
               onClick={() => props.onComponentClick(props.contactRef)}
+              onMouseEnter={() =>
+                setContactBtnColor(darkTheme ? "#f8f8f8" : "#212529")
+              }
+              onMouseLeave={() => setContactBtnColor("#f61be0")}
             >
               Contact Me
             </button>
