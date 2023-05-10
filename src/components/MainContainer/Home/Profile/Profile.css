@@ -57,17 +57,23 @@
     gap: 50px;
 }
 
-.btn-outline-dark {
+.buttons .btn {
     width: 10.2em;
     height: 2.8em;
     border-width: 2px; 
+    border-radius: 50px;
     transition: .05 ease-in-out;
 }
 
-.btn-dark {
+.buttons .btn {
     width: 10.2em;
     height: 2.8em;
+    border-radius: 50px;
     border-width: 2px; 
+}
+
+.buttons .btn:active {
+    transform: scale(0.95);
 }
 
   .funky-name {

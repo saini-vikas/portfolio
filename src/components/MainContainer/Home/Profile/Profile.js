@@ -9,10 +9,10 @@ function Profile(props) {
 
   const style = {
     profileInfoStyle: {
-      color: darkTheme ? "#f8f8f8" : "#353535",
+      color: darkTheme ? "#f8f8f8" : "#212529",
     },
     iconStyle: {
-      color: darkTheme ? "#f8f8f8" : "#353535",
+      color: darkTheme ? "#f8f8f8" : "#212529",
     },
     lineStyle: {
       boderColor: darkTheme ? "#f8f8f8" : "#212529",
@@ -69,7 +69,6 @@ function Profile(props) {
           </div>
           <div className="buttons">
             <button
-              type="button"
               href={require("../../../../Assets/Vikas_Saini_CV.pdf")}
               className={"btn btn-lg btn-" + style.btnTheme.color}
               style={style.ResumeButtonStyle}
@@ -78,7 +77,6 @@ function Profile(props) {
               Resume
             </button>
             <button
-              type="button"
               className={"btn btn-lg btn-outline-" + style.btnTheme.color}
               onClick={() => props.onComponentClick(props.contactRef)}
             >
