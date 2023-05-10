@@ -57,31 +57,54 @@
     gap: 50px;
 }
 
-.buttons .btn {
+.buttons .resume-btn {
     width: 10.2em;
     height: 2.8em;
     border-width: 2px; 
+    color: #212529;
+    border-color: #369bdd;
     border-radius: 50px;
+    background-color: #369bdd;
     transition: .05 ease-in-out;
 }
 
-.buttons .btn {
+.buttons .contact-btn {
     width: 10.2em;
     height: 2.8em;
+    border-color: #f61be0;
     border-radius: 50px;
+    color:#f61be0;
     border-width: 2px; 
 }
 
-.buttons .btn:active {
-    transform: scale(0.95);
+.buttons .resume-btn:hover {
+    background: transparent;
+    color: #369bdd !important;
+
 }
+
+.buttons .contact-btn:hover {
+    background: #f61be0;
+    
+}
+
+.buttons .contact-btn:active {
+    border-color: #f61be0;
+}
+
+.buttons .resume-btn:active {
+    border-color: #369bdd;
+    background-color: transparent;
+    color: #369bdd !important;
+}
+
 
   .funky-name {
     font-family: Rubik Vinyl;
     background-clip: text; 
     -webkit-background-clip: text; 
     color: transparent;
-    background-image: linear-gradient(to right, #106ecc, #dc12a3);
+    background-image: linear-gradient(to right, #369bdd, #dc24ab);
   }
 
 .profile-tagline {
@@ -146,8 +169,8 @@
         height: calc(50vw + 150px);
     }
     .profile-background{
-        width: 93%;
-        height: 93%;
+        width: 92%;
+        height: 92%;
     }
     .profile-tagline {
         font-size: calc(3vw + 8px);

@@ -22,14 +22,20 @@ function Profile(props) {
         ? "0 1px 0px 0px rgb(249, 248, 248)"
         : "0 1px 0px 0px rgb(29, 27, 27)",
     },
-    ResumeButtonStyle: {
+    resumeBtn: {
+      boxShadow: darkTheme
+        ? "2px 5px 5px rgb(22, 21, 21)"
+        : "2px 5px 5px rgb(180, 180, 180)",
+      color: darkTheme ? "#212529" : "#f8f8f8",
+    },
+    contactBtn: {
       boxShadow: darkTheme
         ? "2px 5px 5px rgb(22, 21, 21)"
         : "2px 5px 5px rgb(180, 180, 180)",
       color: darkTheme ? "" : "",
     },
     downloadStyle: {
-      color: darkTheme ? "#353535" : "#f9f9f9",
+      color: darkTheme ? "#212529" : "#f9f9f9",
     },
     btnTheme: {
       color: darkTheme ? "light" : "dark",
@@ -69,15 +75,23 @@ function Profile(props) {
           </div>
           <div className="buttons">
             <button
+              type="link"
+              className={
+                "btn btn-lg btn-outline-" + style.btnTheme.color + " resume-btn"
+              }
               href={require("../../../../Assets/Vikas_Saini_CV.pdf")}
-              className={"btn btn-lg btn-" + style.btnTheme.color}
-              style={style.ResumeButtonStyle}
+              style={style.resumeBtn}
             >
               <FontAwesomeIcon icon={faDownload} style={style.downloadStyle} />
               Resume
             </button>
             <button
-              className={"btn btn-lg btn-outline-" + style.btnTheme.color}
+              className={
+                "btn btn-lg btn-outline-" +
+                style.btnTheme.color +
+                " contact-btn"
+              }
+              style={style.contactBtn}
               onClick={() => props.onComponentClick(props.contactRef)}
             >
               Contact Me
