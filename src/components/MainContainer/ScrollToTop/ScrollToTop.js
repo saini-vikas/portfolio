@@ -23,7 +23,7 @@ export default function ScrollToTop() {
       {showScrollToTopButton && (
         <button className="btn btn-warning btn-scroll" onClick={scrollToTop}>
           {" "}
-          <i className="bi bi-arrow-up-short"></i>
+          <i className="bi bi-chevron-double-up"></i>
         </button>
       )}
     </div>

@@ -15,11 +15,13 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    z-index: 4;
 
 }
 
 .btn-scroll i{
-    font-size: 28px;
+    font-size: 16px;
+    z-index: 4;
 }
 
 @media screen and (max-width: 1110px) {
@@ -29,7 +31,7 @@
         right: 30px;
     }
     .btn-scroll i{
-        font-size: 24px;
+        font-size: 16px;
     }
     
 }
@@ -42,7 +44,7 @@
         right: 15px;
     }
     .btn-scroll i{
-        font-size: 24px;
+        font-size: 16px;
     }
     
 }
