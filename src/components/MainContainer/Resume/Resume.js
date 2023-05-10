@@ -9,9 +9,9 @@ const Resume = forwardRef((props, ref) => {
   const darkTheme = useContext(ThemeContext);
 
   const styles = {
-    backgroundColor: darkTheme ? "#262626" : "#e7f0f8ef",
+    backgroundColor: darkTheme ? "#292929" : "#e7f0f8ef",
     boxShadow: darkTheme ? "5px 10px 10px #121212" : "5px 10px 10px #aaaaaa",
-    color: darkTheme ? "#909090" : "#505050",
+    color: darkTheme ? "#f2f2f2" : "#404040",
   };
   useEffect(() => {
     Aos.init({ duration: 1000 });

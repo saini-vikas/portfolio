@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    margin: 70px 0 20px 0;
     background-image: url("./../../../Assets/blury.svg");
     background-position: initial;
     
@@ -12,8 +13,9 @@
 @media  screen and (max-width:1110px) {
   .home-container {
     background-position: center;
+    margin: 50px 0 20px 0;
     background-size: cover;
-    height: 100vh;
+    
   }
 }
 
@@ -21,8 +23,9 @@
 @media  screen and (max-width:450px) {
   .home-container {
     background-position: bottom;
+    margin: 30px 0 30px 0;
     background-size:cover;
-    height: 90vh;
+ 
   }
 }
 

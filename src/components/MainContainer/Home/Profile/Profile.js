@@ -57,7 +57,7 @@ function Profile(props) {
         </div>
         <div className="profile-info" style={style.profileInfoStyle}>
           <h1 className="profile-tagline">
-            Hi! I am <b className="funky-name">Vikas Saini</b>
+            Hi! I am <b className="funky-name">Vikas Saini </b>
           </h1>
           <h1 className="profile-tagline">
             I am a{" "}
@@ -81,8 +81,8 @@ function Profile(props) {
             </a>
           </div>
           <div className="buttons">
-            <button
-              type="link"
+            <a
+              type="button"
               className={
                 "btn btn-lg btn-md btn-outline-" +
                 style.btnTheme.color +
@@ -90,15 +90,17 @@ function Profile(props) {
               }
               href={require("../../../../Assets/Vikas_Saini_CV.pdf")}
               style={style.resumeBtn}
-              onMouseEnter={() => setResumeBtnColor("#369bdd")}
-              onMouseLeave={() => setResumeBtnColor()}
+              onMouseOver={() => setResumeBtnColor("#369bdd")}
+              onMouseOut={() => setResumeBtnColor()}
+              onTouchStart={() => setResumeBtnColor("#369bdd")}
+              onTouchEnd={() => setResumeBtnColor()}
             >
               <FontAwesomeIcon
                 icon={faDownload}
                 style={{ color: resumeBtnColor }}
               />
               Resume
-            </button>
+            </a>
             <button
               className={
                 "btn btn-lg btn-md btn-outline-" +
@@ -107,10 +109,14 @@ function Profile(props) {
               }
               style={style.contactBtn}
               onClick={() => props.onComponentClick(props.contactRef)}
-              onMouseEnter={() =>
+              onMouseOver={() =>
                 setContactBtnColor(darkTheme ? "#f8f8f8" : "#212529")
               }
-              onMouseLeave={() => setContactBtnColor("#f61be0")}
+              onMouseOut={() => setContactBtnColor("#f61be0")}
+              onTouchStart={() =>
+                setContactBtnColor(darkTheme ? "#f8f8f8" : "#212529")
+              }
+              onTouchEnd={() => setContactBtnColor("#f61be0")}
             >
               Contact Me
             </button>

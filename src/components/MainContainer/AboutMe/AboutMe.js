@@ -8,13 +8,13 @@ const AboutMe = forwardRef((props, ref) => {
   const darkTheme = useContext(ThemeContext);
 
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   const styles = {
-    backgroundColor: darkTheme ? "#262626" : "#e7f0f8ef",
+    backgroundColor: darkTheme ? "#292929" : "#e7f0f8ef",
     textcolor: {
-      color: darkTheme ? "#dddddd" : "#353535",
+      color: darkTheme ? "#f5f5f5" : "#212529",
     },
   };
   return (

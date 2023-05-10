@@ -10,12 +10,14 @@ const Contact = forwardRef((props, ref) => {
   const darkTheme = useContext(ThemeContext);
 
   const style = {
+    btnStyle: {
+      color: darkTheme ? "light" : "dark",
+    },
     iconStyle: {
-      color: darkTheme ? "#dddddd" : "#353535",
+      color: darkTheme ? "#f8f8f8" : "#212529",
     },
     textStyle: {
-      color: darkTheme ? "#dddddd" : "#353535",
-      fontWeight: "bold",
+      color: darkTheme ? "#f8f8f8" : "#212529",
     },
     shadowStyle: {
       boxShadow: darkTheme
@@ -26,8 +28,8 @@ const Contact = forwardRef((props, ref) => {
         : "1px solid rgba(40, 40, 40, 0.2)",
     },
     lineStyle: {
-      color: darkTheme ? "#f9f9f9" : "#212529",
-      backgroundColor: darkTheme ? "#f9f9f9" : "#212529",
+      color: darkTheme ? "#f8f8f8" : "#212529",
+      backgroundColor: darkTheme ? "#f8f8f8" : "#212529",
     },
   };
 
@@ -151,7 +153,10 @@ const Contact = forwardRef((props, ref) => {
                   ></textarea>
                 </div>
               </div>
-              <button type="submit" className="btn btn-primary">
+              <button
+                type="submit"
+                className={"btn btn-" + style.btnStyle.color}
+              >
                 Send <i className="bi bi-send-fill"></i>
               </button>
             </div>
