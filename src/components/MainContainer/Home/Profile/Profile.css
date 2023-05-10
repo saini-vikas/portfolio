@@ -57,80 +57,25 @@
     gap: 50px;
 }
 
+.btn-outline-dark {
+    width: 10.2em;
+    height: 2.8em;
+    border-width: 2px; 
+    transition: .05 ease-in-out;
+}
 
-.rainbow-hover {
-    font-size: calc(0.2vw + 14px);
-    font-weight: 700;
-    font-family: Helvetica,"sans-serif";
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
-    color: #cfef00;
-    background-color: #2B3044;
-    cursor: pointer;
-    width: calc(10vw + 26px);
-    height: calc(2vw + 20px);
-    line-height: calc(2vw + 20px);
-    min-width: 190px;
-    min-height: 50px;
-    border-radius: 10px;
-    transform-style: preserve-3d;
-    transform: scale(var(--s, 1)) perspective(600px)
-      rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
-    perspective: 600px;
-    transition: transform 0.1s;
-  }
-  
-  
-  .rainbow-hover:active {
-    transition: 0.3s;
-    transform: scale(0.93);
-  }
-
-  .btn-about-me {
-    cursor: pointer;
-    font-weight: 700;
-    font-family: Helvetica,"sans-serif";
-    transition: all .2s;
-    width: calc(10vw + 26px);
-    height: calc(2vw + 20px);
-    line-height: calc(2vw + 20px);;
-    min-width: 190px;
-    min-height: 50px;
-    border-radius: 10px;
-    background: #cfef00;
-    box-shadow: 2px 5px 5px #5a6702;
-    border: 1px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(0.2vw + 14px);
-  }
-
-  .btn-about-me span {
-    color: #2B3044;
-  }
-  
-  .btn-about-me:hover {
-    background: #c4e201;
-  }
-  
-  .btn-about-me > svg {
-    width: 34px;
-    margin-left: 10px;
-    transition: transform .3s ease-in-out;
-  }
-  
-  .btn-about-me:hover svg {
-    transform: translateX(7px);
-  }
-  
-  .btn-about-me:active {
-    transform: scale(0.95);
-  }
+.btn-dark {
+    width: 10.2em;
+    height: 2.8em;
+    border-width: 2px; 
+}
 
   .funky-name {
     font-family: Rubik Vinyl;
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    color: transparent;
+    background-image: linear-gradient(to right, #106ecc, #dc12a3);
   }
 
 .profile-tagline {
@@ -141,6 +86,10 @@
     font-size: calc(4vw + 12px);
 }
 .profile-tagline strong {
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    color: transparent;
+    background-image: linear-gradient(to right, #dc12a3, #106ecc);
     font-size: calc(2vw + 6px);
 }
 
@@ -148,10 +97,6 @@
     margin: 15px;
     font-size: calc(2vw + 8px);
     padding: 8px;
-}
-
-.link i:hover {
-    color: #46a3e2 !important;
 }
 
 
