@@ -1,34 +1,19 @@
-.breaker {
-    color: rgb(177, 27, 27);
-    background-color: white;
-    height: 100px;
-    width:100%;
-}
 
 .portfolio {
   display: flex;
   background-color: #f9f9f9;
   width: 100%;
-  margin: auto;
-  margin-bottom: 30px;
 }
 
 
 @media  screen and (max-width: 835px) {
-
     .portfolio{
-        margin-top: 15px;
-        margin-bottom: 15px;
-        
+        margin-top: 15px; 
     }
 }
 
 @media  screen and (max-width: 435px) {
-
     .portfolio{
-        margin-top: 2px;
-        margin-bottom: 2px;
-        width: 100%;
-        
+        margin-top: 2px; 
     }
 }

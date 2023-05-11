@@ -1,17 +1,22 @@
-.heading {
+.education-heading {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 20%;
 }
 
-.heading h1 {
+.education-heading-title {
     color: rgb(17, 16, 16);
     font-family: 'garamond' sans-serif;
-    margin: 100px 0px 100px 0px;
     z-index: 2;
 }
 
 .education-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 50px 0 50px 0;
     justify-content: center;
     align-items: center;
 }
@@ -24,6 +29,7 @@
 .timeline-container {
     display: flex;
     width: 100%;
+    margin: 50px 0 50px 0;
     justify-content: center;
 
 }
@@ -123,6 +129,11 @@
     --color2: #1071ad;
 }
 @media screen and (max-width:1110px){
+
+    .education-container {
+        padding: 25px 0 25px 0;;
+    }
+    
     .main-timeline .timeline,
     .main-timeline .timeline:nth-child(even){
         width: 100%;
@@ -148,7 +159,16 @@
     }
 }
 @media screen and (max-width:576px){
-    .main-timeline .timeline-content{ padding-top: 60px; }
+
+    .education-container {
+        padding: 20px 0 20px 0;
+    }
+    .timeline-container {
+        margin: 20px 0 20px 0;
+    }
+    .main-timeline .timeline-content {
+        padding-top: 60px; 
+    }
 
     .main-timeline .timeline-content h3{
         font-size: 1.0em;

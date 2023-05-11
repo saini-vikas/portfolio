@@ -48,8 +48,8 @@ const Resume = forwardRef((props, ref) => {
 
   return (
     <div className="education-container" id={props.id || ""} ref={ref}>
-      <div className="heading">
-        <h1>Education</h1>
+      <div className="education-heading">
+        <h1 className="education-heading-title">Education</h1>
       </div>
       <div className="timeline-container">
         <div className="row">

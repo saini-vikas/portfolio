@@ -63,10 +63,10 @@ const Skills = forwardRef((props, ref) => {
 
   return (
     <div className="skills-container" style={style}>
+      <div className="skills-heading">
+        <h1 className="skills-heading-title">Skills</h1>
+      </div>
       <div className="skills-section">
-        <div className="heading">
-          <h1>Skills</h1>
-        </div>
         <div className="skill-container" id={props.id || ""} ref={ref}>
           <div className="skills">
             {skills.map((skill) => (

@@ -24,8 +24,8 @@ const AboutMe = forwardRef((props, ref) => {
       id={props.id || ""}
       ref={ref}
     >
-      <div className="heading">
-        <h1 className="heading-title">About Me</h1>
+      <div className="about-heading">
+        <h1 className="about-heading-title">About Me</h1>
       </div>
       <div id="section-aboutme" className="aboutme">
         <div className="blob"></div>

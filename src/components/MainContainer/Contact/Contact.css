@@ -7,7 +7,7 @@
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
+    padding: 50px 0 50px 0;
     width: 100vw;
 } 
 
@@ -18,18 +18,32 @@
     justify-content: center;
     background: transparent;
     width: 90vw;
+    margin: 50px;
+}
+
+.contact-container .line-3 {
+    width: 90%;
+    border-width: 2px;
+    margin-top: 50px;
+
 }
 
 #inputName {
     text-transform: capitalize;
 }
 
+.contact-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+}
 
-.heading h1 {
+.contact-heading-title {
     color: rgb(17, 16, 16);
     font-family: 'garamond', sans-serif;
     z-index: 2;
-    margin: 10px 0px 100px 0px;
 }
 
 .social-media-icons-2 {
@@ -70,9 +84,9 @@
     height: 450px;
     padding-left: 30px;
     padding-right: 30px;
+    margin: 20px 10px 20px 10px;
     background:rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    margin-bottom: 50px;
     gap: 30px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -111,15 +125,14 @@
 
 @media screen and (max-width: 1110px) {
     .contact-container {
-        height: 70vh;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
     }
+    
     .contact-form {
         width: calc(75vw + 50px);
         min-width: 450px;
-        height: calc(50vw + 40px);
         align-items: center;
         justify-content: center;
         display: flex;
@@ -157,21 +170,26 @@
 @media screen and (max-width: 600px) {
 
     .contact-container{
-        height: 95vh;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        padding: 30px 0 30px 0;;
+    }
+    .Contact {
+        margin: 25px 10px 25px 10px;
+        
     }
     .contact-form {
-        width: 90vw;
+        width: 100%;
+        height: 95%;
         min-width: 300px;
-        height: 75vh;
         min-height: 500px;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        padding: 0px !important;
     }
     .contact-form-info {
         margin: 20px;
@@ -190,14 +208,14 @@
     .social-media-icons-2 {
         flex-direction: row;
         width: 100%;
-        height: 15%;
+        
     }
     .link-2 {
         margin: 10px;
 
     }
     .social-media-icons-2 {
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .link-2 i {
         font-size: calc(3vw + 30px);
@@ -219,6 +237,10 @@
     form {
         width: 100%;
         align-items: center;
+        margin: 10px;
+    }
+    .contact-container .line-3 {
+        margin-top: 25px;
     }
 
     
