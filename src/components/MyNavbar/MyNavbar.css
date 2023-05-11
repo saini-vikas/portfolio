@@ -9,6 +9,11 @@
   
 }
 
+.navbar-brand  {
+  font-family: Rubik Vinyl;
+  font-size: 24px;
+}
+
 .container-fluid {
   margin: 0px 100px 0px 100px;
   

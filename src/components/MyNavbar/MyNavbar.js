@@ -37,7 +37,7 @@ export default function MyNavbar(props) {
   }, []);
 
   useEffect(() => {
-    if (windowWidth >= 560 && windowWidth <= 750) {
+    if (windowWidth >= 576 && windowWidth <= 750) {
       setShowIcon(true);
     } else {
       setShowIcon(false);
@@ -141,7 +141,10 @@ export default function MyNavbar(props) {
             >
               <Offcanvas.Title
                 id={`offcanvasNavbarLabel-expand-sm`}
-                style={{ color: darkTheme ? "white" : "black" }}
+                style={{
+                  color: darkTheme ? "white" : "black",
+                  fontFamily: "Rubik Vinyl",
+                }}
               >
                 {icons.user} Vikas Saini
               </Offcanvas.Title>
