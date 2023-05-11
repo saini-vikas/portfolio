@@ -9,6 +9,9 @@ const Skills = forwardRef((props, ref) => {
 
   const style = {
     backgroundColor: darkTheme ? "#262626" : "#e7f0f8ef",
+    textStyle: {
+      color: darkTheme ? "#f8f8f8" : "#212529",
+    },
   };
   const skills = [
     {
@@ -64,7 +67,9 @@ const Skills = forwardRef((props, ref) => {
   return (
     <div className="skills-container" style={style}>
       <div className="skills-heading">
-        <h1 className="skills-heading-title">Skills</h1>
+        <h1 className="skills-heading-title" style={style.textStyle}>
+          Skills
+        </h1>
       </div>
       <div className="skills-section">
         <div className="skill-container" id={props.id || ""} ref={ref}>

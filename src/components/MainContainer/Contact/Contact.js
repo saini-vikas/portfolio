@@ -67,7 +67,9 @@ const Contact = forwardRef((props, ref) => {
   return (
     <div className="contact-container" id={props.id || ""} ref={ref}>
       <div className="contact-heading">
-        <h1 className="contact-heading-title">Contact Me </h1>
+        <h1 className="contact-heading-title" style={style.textStyle}>
+          Contact Me{" "}
+        </h1>
       </div>
       <div className="Contact" id={props.id || ""}>
         <div className="contact-form" style={style.shadowStyle}>

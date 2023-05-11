@@ -25,7 +25,9 @@ const AboutMe = forwardRef((props, ref) => {
       ref={ref}
     >
       <div className="about-heading">
-        <h1 className="about-heading-title">About Me</h1>
+        <h1 className="about-heading-title" style={styles.textcolor}>
+          About Me
+        </h1>
       </div>
       <div id="section-aboutme" className="aboutme">
         <div className="blob"></div>

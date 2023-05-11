@@ -12,6 +12,9 @@ const Resume = forwardRef((props, ref) => {
     backgroundColor: darkTheme ? "#292929" : "#e7f0f8ef",
     boxShadow: darkTheme ? "5px 10px 10px #121212" : "5px 10px 10px #aaaaaa",
     color: darkTheme ? "#f2f2f2" : "#404040",
+    textStyle: {
+      color: darkTheme ? "#f8f8f8" : "#212529",
+    },
   };
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -49,7 +52,9 @@ const Resume = forwardRef((props, ref) => {
   return (
     <div className="education-container" id={props.id || ""} ref={ref}>
       <div className="education-heading">
-        <h1 className="education-heading-title">Education</h1>
+        <h1 className="education-heading-title" style={styles.textStyle}>
+          Education
+        </h1>
       </div>
       <div className="timeline-container">
         <div className="row">
