@@ -1,4 +1,5 @@
 import { forwardRef, useContext } from "react";
+import skillImage from "./../../../Assets/skills.svg";
 import React from "react";
 import "./Skills.css";
 import Skill from "./Skill";
@@ -72,6 +73,9 @@ const Skills = forwardRef((props, ref) => {
         </h1>
       </div>
       <div className="skills-section">
+        <div className="illustration">
+          <img src={skillImage} alt=""></img>
+        </div>
         <div className="skill-container" id={props.id || ""} ref={ref}>
           <div className="skills">
             {skills.map((skill) => (

@@ -27,7 +27,6 @@ function Skill(props) {
       </div>
       <div className="skillIcon">
         <h6 className="skill-title">{props.name}</h6>
-        <ProgressBar now={props.confidence} label={props.confidence + "%"} />
       </div>
     </div>
   );
