@@ -9,7 +9,7 @@ function Skill(props) {
 
   const style = {
     backgroundColor: darkTheme ? "#313131" : "#f9f9f9",
-    color: darkTheme ? "#aaaaaa" : "#505050",
+    color: darkTheme ? "#cccccc" : "#505050",
     boxShadow: darkTheme
       ? "2px 2px 5px rgba(10, 10, 10, 0.7)"
       : "2px 2px 5px rgba(110, 110, 110, 0.5)",

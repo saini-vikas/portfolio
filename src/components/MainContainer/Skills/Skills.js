@@ -1,5 +1,5 @@
 import { forwardRef, useContext } from "react";
-import skillImage from "./../../../Assets/skills.svg";
+import skillImage from "./../../../Assets/skills2.svg";
 import React from "react";
 import "./Skills.css";
 import Skill from "./Skill";
