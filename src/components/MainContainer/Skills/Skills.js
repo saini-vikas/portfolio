@@ -31,6 +31,16 @@ const Skills = forwardRef((props, ref) => {
       icon: require("./../../../Assets/python.png"),
     },
     {
+      name: "ML",
+      confidence: 68,
+      icon: require("./../../../Assets/ml.png"),
+    },
+    {
+      name: "AI",
+      confidence: 73,
+      icon: require("./../../../Assets/ai.png"),
+    },
+    {
       name: "Javascript",
       confidence: 80,
       icon: require("./../../../Assets/js.png"),
@@ -60,8 +70,18 @@ const Skills = forwardRef((props, ref) => {
     },
     {
       name: "Tensorflow",
-      confidence: 65,
+      confidence: 63,
       icon: require("./../../../Assets/tf.png"),
+    },
+    {
+      name: "Dart",
+      confidence: 65,
+      icon: require("./../../../Assets/dart.png"),
+    },
+    {
+      name: "MongoDB",
+      confidence: 82,
+      icon: require("./../../../Assets/mongodb.png"),
     },
   ];
 

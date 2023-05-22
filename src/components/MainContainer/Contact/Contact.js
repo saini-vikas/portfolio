@@ -31,6 +31,9 @@ const Contact = forwardRef((props, ref) => {
       color: darkTheme ? "#f8f8f8" : "#212529",
       backgroundColor: darkTheme ? "#f8f8f8" : "#212529",
     },
+    footerStyle: {
+      color: darkTheme ? "#aaaaaa" : "#606060",
+    },
   };
 
   const form = useRef();
@@ -166,6 +169,9 @@ const Contact = forwardRef((props, ref) => {
         </div>
       </div>
       <hr className="line-3" style={style.iconStyle}></hr>
+      <span style={style.footerStyle}>
+        Copyright <i class="bi bi-c-circle"></i> 2023 Vikas Saini
+      </span>
     </div>
   );
 });
