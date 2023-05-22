@@ -33,6 +33,10 @@
   z-index: 2;
 }
 
+.about p {
+  font-weight: 400;
+}
+
 .aboutme {
   display: flex;
   justify-content: center;
