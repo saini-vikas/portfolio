@@ -47,6 +47,11 @@ function Profile(props) {
     btnTheme: {
       color: darkTheme ? "light" : "dark",
     },
+    statsStyle: {
+      backgroundColor: darkTheme ? "#292929" : "#e7f0f8ef",
+      boxShadow: darkTheme ? "5px 10px 10px #121212" : "5px 10px 10px #aaaaaa",
+      color: darkTheme ? "#f5f5f5" : "#212529",
+    },
   };
 
   return (
@@ -120,6 +125,20 @@ function Profile(props) {
             >
               Contact Me
             </button>
+          </div>
+        </div>
+        <div className="stats" style={style.statsStyle}>
+          <div className="first">
+            <h3 className="main-line">8000+</h3>
+            <p>Lines of code</p>
+          </div>
+          <div className="second">
+            <h3 className="main-line">3+</h3>
+            <p>Years of experience</p>
+          </div>
+          <div className="third">
+            <h3 className="main-line">15</h3>
+            <p>Projects</p>
           </div>
         </div>
       </div>

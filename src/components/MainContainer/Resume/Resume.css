@@ -55,11 +55,15 @@
     display: block;
     position: relative;
 }
-.main-timeline .timeline-content h3{
+.main-timeline .timeline-content h3 {
     text-transform: uppercase;
     font-size: 1.6em;
-    font-weight: bolder;
+    font-weight: bolder !important;
     color: var(--color2);
+}
+
+.timeline .title {
+    font-weight: bolder !important;
 }
 
 .main-timeline .timeline-year{
