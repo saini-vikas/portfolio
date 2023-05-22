@@ -50,7 +50,7 @@ function Profile(props) {
     statsStyle: {
       backgroundColor: darkTheme ? "#292929" : "#e7f0f8ef",
       boxShadow: darkTheme ? "5px 10px 10px #121212" : "5px 10px 10px #aaaaaa",
-      color: darkTheme ? "#f5f5f5" : "#212529",
+      color: darkTheme ? "#ACBCFF" : "#4C4C6D",
     },
   };
 
@@ -62,7 +62,7 @@ function Profile(props) {
         </div>
         <div className="profile-info" style={style.profileInfoStyle}>
           <h1 className="profile-tagline">
-            Hi! I am <b className="funky-name">Vikas Saini </b>
+            Hi, I am <b className="funky-name">Vikas Saini </b>
           </h1>
           <h1 className="profile-tagline">
             I am a{" "}

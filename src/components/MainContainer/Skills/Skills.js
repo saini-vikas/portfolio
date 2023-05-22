@@ -13,6 +13,9 @@ const Skills = forwardRef((props, ref) => {
     textStyle: {
       color: darkTheme ? "#f8f8f8" : "#212529",
     },
+    tagLine: {
+      color: darkTheme ? "#ACBCFF" : "#4C4C6D",
+    },
   };
   const skills = [
     {
@@ -88,9 +91,12 @@ const Skills = forwardRef((props, ref) => {
   return (
     <div className="skills-container" style={style}>
       <div className="skills-heading">
-        <h1 className="skills-heading-title" style={style.textStyle}>
+        <h1 className="skills-heading-title" style={style.tagLine}>
           Skills
         </h1>
+        <p className="skills-tagline" style={style.tagLine}>
+          {props.tagline}
+        </p>
       </div>
       <div className="skills-section">
         <div className="illustration">

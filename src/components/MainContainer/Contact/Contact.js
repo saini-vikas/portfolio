@@ -18,6 +18,7 @@ const Contact = forwardRef((props, ref) => {
     },
     textStyle: {
       color: darkTheme ? "#f8f8f8" : "#212529",
+      fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
     },
     shadowStyle: {
       boxShadow: darkTheme
@@ -33,6 +34,12 @@ const Contact = forwardRef((props, ref) => {
     },
     footerStyle: {
       color: darkTheme ? "#aaaaaa" : "#606060",
+    },
+    tagLine: {
+      color: darkTheme ? "#ACBCFF" : "#4C4C6D",
+    },
+    inputText: {
+      fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
     },
   };
 
@@ -70,9 +77,12 @@ const Contact = forwardRef((props, ref) => {
   return (
     <div className="contact-container" id={props.id || ""} ref={ref}>
       <div className="contact-heading">
-        <h1 className="contact-heading-title" style={style.textStyle}>
+        <h1 className="contact-heading-title" style={style.tagLine}>
           Contact Me{" "}
         </h1>
+        <p className="contact-tagline" style={style.tagLine}>
+          {props.tagline}
+        </p>
       </div>
       <div className="Contact" id={props.id || ""}>
         <div className="contact-form" style={style.shadowStyle}>
@@ -113,6 +123,7 @@ const Contact = forwardRef((props, ref) => {
                     className="form-control"
                     onChange={(e) => setName(e.target.value)}
                     value={name}
+                    style={style.inputText}
                     placeholder="Name"
                     id="inputName"
                   ></input>
@@ -132,6 +143,7 @@ const Contact = forwardRef((props, ref) => {
                     name="user-email"
                     placeholder="Email"
                     className="form-control"
+                    style={style.inputText}
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     id="inputEmail"
@@ -152,6 +164,7 @@ const Contact = forwardRef((props, ref) => {
                     placeholder="Enter your message"
                     name="user-message"
                     className="form-control"
+                    style={style.inputText}
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
                     id="inputTextArea"
@@ -161,6 +174,7 @@ const Contact = forwardRef((props, ref) => {
               <button
                 type="submit"
                 className={"btn btn-" + style.btnStyle.color}
+                style={style.inputText}
               >
                 Send <i className="bi bi-send-fill"></i>
               </button>
@@ -170,7 +184,7 @@ const Contact = forwardRef((props, ref) => {
       </div>
       <hr className="line-3" style={style.iconStyle}></hr>
       <span style={style.footerStyle}>
-        Copyright <i class="bi bi-c-circle"></i> 2023 Vikas Saini
+        Copyright <i className="bi bi-c-circle"></i> 2023 Vikas Saini
       </span>
     </div>
   );

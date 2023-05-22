@@ -1,14 +1,19 @@
 .about-heading {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 90%;
   height: 20%;
 }
+.about-tagline {
+  font-size: 1.6em;
+  font-family: Pacifico;
+}
 
 .about-heading-title {
     color: rgb(31, 28, 28);
-    font-family:'garamond' sans-serif !important;
+    font-family: Pacifico;
     margin: 20px;
     z-index: 2;
 }
@@ -188,6 +193,9 @@
     .about-container {
       padding: 25px 0 25px 0;
     }
+    .about-tagline {
+      font-size: 1.2em;
+    }
     .aboutme {
         flex-direction: column;
         justify-content: flex-start;
@@ -234,6 +242,9 @@
       width: 100%;
       padding: 20px 0 20px 0;
     }
+    .about-tagline {
+      font-size: 0.9em;
+    }
     .aboutme {
         flex-direction: column;
         gap: 20px;
@@ -250,25 +261,25 @@
         height: 90vw;
     }
     .blob {
-      top: calc(1vw + 1px); 
+      top: calc(1vw + 40px); 
       left: 50vw;
       width: calc(35vw + 10px);
       height: calc(35vw + 10px);
     }
     .blob2 {
-      top: calc(50vh + 30px); 
+      top: calc(50vh + 70px); 
       left: 60vw;
       width: calc(30vw + 10px);
       height: calc(30vw + 10px);
     }
     .blob3 {
-      top: calc(80vh + 30px); 
+      top: calc(80vh + 70px); 
       left: 15vw;
       width: calc(40vw + 10px);
       height: calc(40vw + 10px);
     }
     .blob4 {
-      top: calc(55vh + 30px); 
+      top: calc(55vh + 80px); 
       left: 5vw;
       width: calc(15vw + 10px);
       height: calc(15vw + 10px);

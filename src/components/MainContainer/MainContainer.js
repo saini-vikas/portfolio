@@ -14,6 +14,15 @@ export default function MainContainer() {
   const [darkTheme, setDarkTheme] = useState(false);
   const [switchOn, setSwitchOn] = useState(false);
 
+  const tagLines = {
+    aboutme:
+      "From passion to profession: Illuminating the essence of who I am.",
+    education:
+      "Learning to code, coding to learn: How education paved the path to my digital ambitions.",
+    skills: "From Vision to Execution: Skills that Bring Ideas to Life.",
+    contact: "Code, coffee, and collaboration: Let's connect and talk ideas!",
+  };
+
   const homeComponentRef = useRef();
   const aboutComponentRef = useRef();
   const resumeComponentRef = useRef();
@@ -70,10 +79,26 @@ export default function MainContainer() {
           onComponentClick={handleScrollToComponent}
           contactRef={contactComponentRef}
         />
-        <AboutMe id="aboutme" ref={aboutComponentRef} />
-        <Resume id="resume" ref={resumeComponentRef} />
-        <Skills id="skills" ref={skillsComponentRef} />
-        <Contact id="contactme" ref={contactComponentRef} />
+        <AboutMe
+          id="aboutme"
+          ref={aboutComponentRef}
+          tagline={tagLines.aboutme}
+        />
+        <Resume
+          id="resume"
+          ref={resumeComponentRef}
+          tagline={tagLines.education}
+        />
+        <Skills
+          id="skills"
+          ref={skillsComponentRef}
+          tagline={tagLines.skills}
+        />
+        <Contact
+          id="contactme"
+          ref={contactComponentRef}
+          tagline={tagLines.contact}
+        />
         <ScrollToTop />
       </ThemeContext.Provider>
     </div>

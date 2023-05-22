@@ -16,6 +16,12 @@ const AboutMe = forwardRef((props, ref) => {
     textcolor: {
       color: darkTheme ? "#f5f5f5" : "#212529",
     },
+    tagLine: {
+      color: darkTheme ? "#ACBCFF" : "#4C4C6D",
+    },
+    pStyle: {
+      fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
+    },
   };
   return (
     <div
@@ -25,9 +31,12 @@ const AboutMe = forwardRef((props, ref) => {
       ref={ref}
     >
       <div className="about-heading">
-        <h1 className="about-heading-title" style={styles.textcolor}>
+        <h1 className="about-heading-title" style={styles.tagLine}>
           About Me
         </h1>
+        <p className="about-tagline" style={styles.tagLine}>
+          {props.tagline}
+        </p>
       </div>
       <div id="section-aboutme" className="aboutme">
         <div className="blob"></div>
@@ -46,7 +55,7 @@ const AboutMe = forwardRef((props, ref) => {
           </div>
         </div>
         <div className="about" style={styles.textcolor}>
-          <p>
+          <p style={styles.pStyle}>
             My name is Vikas and I am a software and web developer with a
             Bachelor's degree in Computer Science. With my expertise in various
             programming languages and frameworks, I have developed numerous

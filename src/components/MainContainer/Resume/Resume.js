@@ -15,6 +15,9 @@ const Resume = forwardRef((props, ref) => {
     textStyle: {
       color: darkTheme ? "#f8f8f8" : "#212529",
     },
+    tagLine: {
+      color: darkTheme ? "#ACBCFF" : "#4C4C6D",
+    },
   };
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -33,7 +36,7 @@ const Resume = forwardRef((props, ref) => {
       Institution: "Algonquin College",
       Location: "Ottawa",
       Program: "Electro-Mechanical Technician",
-      Stream: "Robotics",
+      Stream: "Electro-Mechanical (Robotics)",
       CGPA: "3.92/4.00",
       Award: "Allen Ryan Scholarship Award",
       Year: "2017",
@@ -42,7 +45,7 @@ const Resume = forwardRef((props, ref) => {
       Institution: "Shanti Gyan Niketan Public School",
       Location: "New Delhi",
       Program: "High School",
-      Stream: "Non-Medical",
+      Stream: "Non-Medical (Physics, Chemistry and Math)",
       CGPA: "9.1/10.0",
       Award: "",
       Year: "2014",
@@ -52,9 +55,12 @@ const Resume = forwardRef((props, ref) => {
   return (
     <div className="education-container" id={props.id || ""} ref={ref}>
       <div className="education-heading">
-        <h1 className="education-heading-title" style={styles.textStyle}>
+        <h1 className="education-heading-title" style={styles.tagLine}>
           Education
         </h1>
+        <p className="education-tagline" style={styles.tagLine}>
+          {props.tagline}
+        </p>
       </div>
       <div className="timeline-container">
         <div className="row">
@@ -74,7 +80,7 @@ const Resume = forwardRef((props, ref) => {
                     <h6 className="institute">
                       {edu.Institution}, {edu.Location}
                     </h6>
-                    <h6 className="description">CGPA: {edu.CGPA}</h6>
+                    <p className="description">CGPA: {edu.CGPA}</p>
                   </div>
                 </div>
               ))}

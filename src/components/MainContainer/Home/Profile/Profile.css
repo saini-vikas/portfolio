@@ -70,6 +70,7 @@
     flex-direction: column;
     justify-content: center !important;
     align-items: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .buttons {
@@ -84,16 +85,19 @@
 
 .buttons .resume-btn {
     width: 10.2em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 2.8em;
     border-width: 2px; 
     border-color: #369bdd;
     border-radius: 50px;
     background-color: #369bdd;
+    padding-top: 10px;
 }
 
 .buttons .contact-btn {
     width: 10.2em;
     height: 2.8em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-color: #f61be0;
     border-radius: 50px;
     border-width: 2px; 
@@ -126,8 +130,7 @@
 }
 
 .profile-tagline {
-    
-    font-family: Roboco Slab;
+    font-family: Pacifico;
     font-size: calc(1vw + 8px);
 }
 .profile b {
@@ -222,6 +225,24 @@
     }
     .line {
         width: calc(50vw + 100px);
+    }
+}
+
+@media screen and (max-width:520px) {
+    .buttons {
+        gap: 20px;
+    }
+    .buttons .resume-btn {
+        padding-top: 7px;
+    }
+    .profile-pic {
+        min-width: 400px;
+        min-height: 400px;
+        width: calc(50vw + 150px);
+        height: calc(50vw + 150px);
+    }
+    .resume-btn, .contact-btn {
+        width: 42% !important;
     }
 }
 
