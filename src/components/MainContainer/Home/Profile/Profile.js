@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import "./Profile.css";
 import { ThemeContext } from "./../../MainContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -72,16 +73,29 @@ function Profile(props) {
           </h1>
           <hr className="line" style={style.lineStyle}></hr>
           <div className="social-media-icons">
-            <a className="link" href="#">
-              <i className="bi bi-instagram" style={style.iconStyle}></i>
+            <a
+              className="link"
+              href="https://instagram.com/vikas.s.12?igshid=OGQ5ZDc2ODk2ZA=="
+            >
+              <OverlayTrigger
+                placement="top"
+                overlay={
+                  <Tooltip id="instagram-tooltip">Instagram profile</Tooltip>
+                }
+              >
+                {<i className="bi bi-instagram" style={style.iconStyle}></i>}
+              </OverlayTrigger>
             </a>
-            <a className="link" href="#">
+            <a
+              className="link"
+              href="https://www.linkedin.com/in/vikas-saini-a65919a4"
+            >
               <i className="bi bi-linkedin" style={style.iconStyle}></i>
             </a>
-            <a className="link" href="#">
+            <a className="link" href="https://github.com/CodewithSaini">
               <i className="bi bi-github" style={style.iconStyle}></i>
             </a>
-            <a className="link" href="#">
+            <a className="link" href="https://twitter.com/Vikas_s_12">
               <i className="bi bi-twitter" style={style.iconStyle}></i>
             </a>
           </div>

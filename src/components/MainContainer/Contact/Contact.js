@@ -34,6 +34,7 @@ const Contact = forwardRef((props, ref) => {
     },
     footerStyle: {
       color: darkTheme ? "#aaaaaa" : "#606060",
+      fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
     },
     tagLine: {
       color: darkTheme ? "#ACBCFF" : "#4C4C6D",
@@ -87,16 +88,22 @@ const Contact = forwardRef((props, ref) => {
       <div className="Contact" id={props.id || ""}>
         <div className="contact-form" style={style.shadowStyle}>
           <div className="social-media-icons-2">
-            <a className="link-2" href="#">
+            <a
+              className="link-2"
+              href="https://instagram.com/vikas.s.12?igshid=OGQ5ZDc2ODk2ZA=="
+            >
               <i className="bi bi-instagram" style={style.iconStyle}></i>
             </a>
-            <a className="link-2" href="#">
+            <a
+              className="link-2"
+              href="https://www.linkedin.com/in/vikas-saini-a65919a4"
+            >
               <i className="bi bi-linkedin" style={style.iconStyle}></i>
             </a>
-            <a className="link-2" href="#">
+            <a className="link-2" href="https://github.com/CodewithSaini">
               <i className="bi bi-github" style={style.iconStyle}></i>
             </a>
-            <a className="link-2" href="#">
+            <a className="link-2" href="https://twitter.com/Vikas_s_12">
               <i className="bi bi-twitter" style={style.iconStyle}></i>
             </a>
           </div>
@@ -184,7 +191,9 @@ const Contact = forwardRef((props, ref) => {
       </div>
       <hr className="line-3" style={style.iconStyle}></hr>
       <span style={style.footerStyle}>
-        Copyright <i className="bi bi-c-circle"></i> 2023 Vikas Saini
+        Copyright{" "}
+        <i className="bi bi-c-circle" style={{ fontSize: "0.8rem" }}></i> 2023
+        Vikas Saini
       </span>
     </div>
   );

@@ -103,6 +103,17 @@
     border-width: 2px; 
 }
 
+#instagram-tooltip > .tooltip-inner {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #062e56;
+  }
+  
+#instagram-tooltip > .tooltip-arrow {
+    display: none !important;
+    
+}
+
 .buttons .resume-btn:hover {
     background: transparent;
 }
