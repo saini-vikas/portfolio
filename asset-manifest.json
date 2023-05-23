@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.deabd707.css",
+    "main.js": "/myportfolio/static/js/main.ea22f178.js",
+    "static/js/787.1ed0c42c.chunk.js": "/myportfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/about-photo.jpeg": "/myportfolio/static/media/about-photo.a4c4a02349036a90cb1d.jpeg",
+    "static/media/profile.png": "/myportfolio/static/media/profile.ead3a5bd2e36190fd558.png",
+    "static/media/skills2.svg": "/myportfolio/static/media/skills2.c3bbca72ec7a7d23e0f055bedf44a1a6.svg",
+    "static/media/blury2.svg": "/myportfolio/static/media/blury2.ba7b254b07a64f3f5c05.svg",
+    "static/media/Vikas_Saini_CV.pdf": "/myportfolio/static/media/Vikas_Saini_CV.75e45bf37552296f8732.pdf",
+    "static/media/ccchaos.svg": "/myportfolio/static/media/ccchaos.c8767349c19defccbc5e.svg",
+    "static/media/blury.svg": "/myportfolio/static/media/blury.4cd86076fb8723cef61e.svg",
+    "index.html": "/myportfolio/index.html",
+    "static/media/graph.svg": "/myportfolio/static/media/graph.8f7a391d1901f99c6f7c.svg",
+    "static/media/blob3.svg": "/myportfolio/static/media/blob3.fca2c10b294e7d77b0c2.svg",
+    "static/media/blob2.svg": "/myportfolio/static/media/blob2.667fe3b2c259c3a3e4c4.svg",
+    "static/media/blob.svg": "/myportfolio/static/media/blob.c3092ac776b343dd398d.svg",
+    "main.deabd707.css.map": "/myportfolio/static/css/main.deabd707.css.map",
+    "main.ea22f178.js.map": "/myportfolio/static/js/main.ea22f178.js.map",
+    "787.1ed0c42c.chunk.js.map": "/myportfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.deabd707.css",
+    "static/js/main.ea22f178.js"
+  ]
+}
