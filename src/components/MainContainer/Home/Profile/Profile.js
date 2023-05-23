@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import "react-tippy/dist/tippy.css";
+import { Tooltip } from "react-tippy";
 import "./Profile.css";
 import { ThemeContext } from "./../../MainContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -73,31 +74,68 @@ function Profile(props) {
           </h1>
           <hr className="line" style={style.lineStyle}></hr>
           <div className="social-media-icons">
-            <a
-              className="link"
-              href="https://instagram.com/vikas.s.12?igshid=OGQ5ZDc2ODk2ZA=="
+            <Tooltip
+              title="Instagram profile"
+              position="top"
+              arrow="true"
+              theme="light"
+              trigger="mouseenter"
+              distance="40"
+              touchHold="true"
+              inertia="true"
             >
-              <OverlayTrigger
-                placement="top"
-                overlay={
-                  <Tooltip id="instagram-tooltip">Instagram profile</Tooltip>
-                }
+              <a
+                className="link"
+                href="https://instagram.com/vikas.s.12?igshid=OGQ5ZDc2ODk2ZA=="
               >
                 {<i className="bi bi-instagram" style={style.iconStyle}></i>}
-              </OverlayTrigger>
-            </a>
-            <a
-              className="link"
-              href="https://www.linkedin.com/in/vikas-saini-a65919a4"
+              </a>
+            </Tooltip>
+            <Tooltip
+              title="Linkedin profile"
+              position="top"
+              arrow="true"
+              trigger="mouseenter"
+              inertia="true"
+              theme="light"
+              distance="40"
+              touchHold="true"
             >
-              <i className="bi bi-linkedin" style={style.iconStyle}></i>
-            </a>
-            <a className="link" href="https://github.com/CodewithSaini">
-              <i className="bi bi-github" style={style.iconStyle}></i>
-            </a>
-            <a className="link" href="https://twitter.com/Vikas_s_12">
-              <i className="bi bi-twitter" style={style.iconStyle}></i>
-            </a>
+              <a
+                className="link"
+                href="https://www.linkedin.com/in/vikas-saini-a65919a4"
+              >
+                <i className="bi bi-linkedin" style={style.iconStyle}></i>
+              </a>
+            </Tooltip>
+            <Tooltip
+              title="Github profile"
+              position="top"
+              arrow="true"
+              trigger="mouseenter"
+              theme="light"
+              distance="40"
+              touchHold="true"
+              inertia="true"
+            >
+              <a className="link" href="https://github.com/CodewithSaini">
+                <i className="bi bi-github" style={style.iconStyle}></i>
+              </a>
+            </Tooltip>
+            <Tooltip
+              title="Twitter profile"
+              position="top"
+              arrow="true"
+              trigger="mouseenter"
+              theme="light"
+              distance="40"
+              touchHold="true"
+              inertia="true"
+            >
+              <a className="link" href="https://twitter.com/Vikas_s_12">
+                <i className="bi bi-twitter" style={style.iconStyle}></i>
+              </a>
+            </Tooltip>
           </div>
           <div className="buttons">
             <a

@@ -3,6 +3,9 @@
     justify-content: center;
 }
 
+.tippy-touch { cursor: pointer !important; }
+
+
 .profile {
     display: flex;
     flex-direction: row-reverse;

@@ -1,7 +1,6 @@
 import React from "react";
 import { useContext } from "react";
 import "./Skills.css";
-import ProgressBar from "react-bootstrap/ProgressBar";
 import { ThemeContext } from "../MainContainer";
 
 function Skill(props) {
