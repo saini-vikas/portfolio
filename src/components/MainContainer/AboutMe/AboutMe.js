@@ -1,15 +1,13 @@
-import React, { forwardRef, useContext, useEffect } from "react";
+import React, { forwardRef, useContext } from "react";
 import "./AboutMe.css";
 import { ThemeContext } from "../MainContainer";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const AboutMe = forwardRef((props, ref) => {
   const darkTheme = useContext(ThemeContext);
 
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+  const imageStyle = {
+    
+  }
 
   const styles = {
     backgroundColor: darkTheme ? "#292929" : "#e7f0f8ef",
@@ -43,31 +41,43 @@ const AboutMe = forwardRef((props, ref) => {
         <div className="blob2"></div>
         <div className="blob3"></div>
         <div className="blob4"></div>
-        <div className="image" data-aos="zoom-in">
-          <div className="card">
-            <div className="imgbox">
-              <div className="img"></div>
+        <div className="image">
+          <section id="card1" className="card">
+            <img
+              src={require("./../../../Assets/about-photo.jpeg")}
+              alt="Not found!"
+            ></img>
+            <div className="card__content">
+              <p className="card__title">Vikas Saini</p>
+              <p className="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                vitae justo vel lorem tincidunt ultrices at non nunc. Donec in
+                sapien viverra, tincidunt augue id, efficitur massa.
+              </p>
+              <button className="btn btn-dark btn-lg info-btn">
+                More Info
+              </button>
             </div>
-            <div className="details">
-              <h2 className="title">Vikas Saini</h2>
-              <span className="caption">Developer</span>
-            </div>
-          </div>
+          </section>
         </div>
         <div className="about" style={styles.textcolor}>
           <p style={styles.pStyle}>
-            My name is Vikas and I am a software and web developer with a
-            Bachelor's degree in Computer Science. With my expertise in various
-            programming languages and frameworks, I have developed numerous
-            websites, web applications and software solutions for clients across
-            diverse industries. In my portfolio, you will find a showcase of my
-            recent projects, which highlight my skills and capabilities as a
-            developer. Each project comes with a brief description of the
-            technology stack used, the challenges faced and the solutions
-            implemented to overcome them. I strive to deliver high-quality,
-            scalable and user-friendly solutions that exceed my clients'
-            expectations. Feel free to explore my portfolio and contact me if
-            you have any queries or project opportunities.
+            My name is Vikas and I am a Software, Machine Learning, and
+            Full-stack developer with a Bachelor's degree in Computer Science
+            and Artificial Intelligence and Machine Learning stream. With my
+            expertise in various programming languages and frameworks, I have
+            developed numerous websites, web and mobile applications and
+            software solutions during my studies and co-op. In the ever-evolving
+            landscape of technology, my passion lies at the intersection of
+            Machine Learning and Artificial Intelligence. Having learnt about
+            neural networks and various machine learning algorithms, my journey
+            now extends into the captivating realms of Natural Language
+            Processing (NLP), Large Language Models (LLM), and Artificial
+            General Intelligence (AGI). This exploration represents a natural
+            progression, fueled by a curiosity to understand and harness the
+            nuances of language understanding and generation. Feel free to
+            explore my portfolio and contact me if you have any queries or
+            project opportunities.
           </p>
         </div>
       </div>

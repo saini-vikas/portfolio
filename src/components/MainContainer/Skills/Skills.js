@@ -19,29 +19,9 @@ const Skills = forwardRef((props, ref) => {
   };
   const skills = [
     {
-      name: "React.js",
-      confidence: 67,
-      icon: require("./../../../Assets/react.png"),
-    },
-    {
-      name: "Node.js",
-      confidence: 80,
-      icon: require("./../../../Assets/node.png"),
-    },
-    {
       name: "Python",
       confidence: 90,
       icon: require("./../../../Assets/python.png"),
-    },
-    {
-      name: "ML",
-      confidence: 68,
-      icon: require("./../../../Assets/ml.png"),
-    },
-    {
-      name: "AI",
-      confidence: 73,
-      icon: require("./../../../Assets/ai.png"),
     },
     {
       name: "Javascript",
@@ -55,6 +35,42 @@ const Skills = forwardRef((props, ref) => {
     },
     { name: "C", confidence: 65, icon: require("./../../../Assets/c.png") },
     { name: "C++", confidence: 67, icon: require("./../../../Assets/c++.png") },
+    { name: "Git", confidence: 80, icon: require("./../../../Assets/git.png") },
+    {
+      name: "ML",
+      confidence: 68,
+      icon: require("./../../../Assets/ml.png"),
+    },
+    {
+      name: "AI",
+      confidence: 73,
+      icon: require("./../../../Assets/ai.png"),
+    },
+    {
+      name: "Tensorflow",
+      confidence: 63,
+      icon: require("./../../../Assets/tf.png"),
+    },
+    {
+      name: "Node.js",
+      confidence: 80,
+      icon: require("./../../../Assets/node.png"),
+    },
+    {
+      name: "React.js",
+      confidence: 67,
+      icon: require("./../../../Assets/react.png"),
+    },
+    {
+      name: "Next.js",
+      confidence: 65,
+      icon: require("./../../../Assets/next.png"),
+    },
+    {
+      name: "Express.js",
+      confidence: 90,
+      icon: require("./../../../Assets/express.png"),
+    },
     {
       name: "Haskell",
       confidence: 80,
@@ -62,19 +78,29 @@ const Skills = forwardRef((props, ref) => {
     },
     { name: "SQL", confidence: 90, icon: require("./../../../Assets/sql.png") },
     {
-      name: "Swift",
+      name: "GCP",
       confidence: 80,
-      icon: require("./../../../Assets/swift.png"),
+      icon: require("./../../../Assets/GCP.png"),
+    },
+    {
+      name: "Kubernetes",
+      confidence: 30,
+      icon: require("./../../../Assets/kubernetes.png"),
+    },
+    {
+      name: "Swift",
+      confidence: 40,
+      icon: require("../../../Assets/swift.png"),
+    },
+    {
+      name: "Docker",
+      confidence: 90,
+      icon: require("./../../../Assets/docker.png"),
     },
     {
       name: "Django",
       confidence: 75,
       icon: require("./../../../Assets/dj.png"),
-    },
-    {
-      name: "Tensorflow",
-      confidence: 63,
-      icon: require("./../../../Assets/tf.png"),
     },
     {
       name: "Dart",
@@ -85,6 +111,11 @@ const Skills = forwardRef((props, ref) => {
       name: "MongoDB",
       confidence: 82,
       icon: require("./../../../Assets/mongodb.png"),
+    },
+    {
+      name: "MySQL",
+      confidence: 60,
+      icon: require("../../../Assets/mysql.png"),
     },
   ];
 

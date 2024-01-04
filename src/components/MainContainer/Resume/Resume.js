@@ -1,8 +1,6 @@
-import { forwardRef, useEffect, useContext } from "react";
+import { forwardRef, useContext } from "react";
 import React from "react";
 import "./Resume.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import { ThemeContext } from "../MainContainer";
 
 const Resume = forwardRef((props, ref) => {
@@ -19,9 +17,6 @@ const Resume = forwardRef((props, ref) => {
       color: darkTheme ? "#ACBCFF" : "#4C4C6D",
     },
   };
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  });
   const Education = [
     {
       Institution: "Carleton University",
@@ -69,7 +64,6 @@ const Resume = forwardRef((props, ref) => {
               {Education.map((edu) => (
                 <div className="timeline" key={edu.Program}>
                   <div
-                    data-aos="flip-up"
                     className="timeline-content"
                     key={edu.Program}
                     style={styles}
