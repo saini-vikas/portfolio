@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.725bcb8b.css",
-    "main.js": "/portfolio/static/js/main.697392fe.js",
+    "main.css": "/portfolio/static/css/main.7bd7a8f6.css",
+    "main.js": "/portfolio/static/js/main.3b416c3d.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/about-photo.jpeg": "/portfolio/static/media/about-photo.a4c4a02349036a90cb1d.jpeg",
     "static/media/profile.png": "/portfolio/static/media/profile.ead3a5bd2e36190fd558.png",
@@ -9,18 +9,19 @@
     "static/media/blury2.svg": "/portfolio/static/media/blury2.ba7b254b07a64f3f5c05.svg",
     "static/media/Vikas_Saini_CV.pdf": "/portfolio/static/media/Vikas_Saini_CV.75e45bf37552296f8732.pdf",
     "static/media/ccchaos.svg": "/portfolio/static/media/ccchaos.c8767349c19defccbc5e.svg",
+    "static/media/next.png": "/portfolio/static/media/next.7fc4f4a57805e6373d97.png",
     "static/media/blury.svg": "/portfolio/static/media/blury.4cd86076fb8723cef61e.svg",
     "static/media/graph.svg": "/portfolio/static/media/graph.8f7a391d1901f99c6f7c.svg",
     "static/media/blob3.svg": "/portfolio/static/media/blob3.fca2c10b294e7d77b0c2.svg",
     "index.html": "/portfolio/index.html",
     "static/media/blob2.svg": "/portfolio/static/media/blob2.667fe3b2c259c3a3e4c4.svg",
     "static/media/blob.svg": "/portfolio/static/media/blob.c3092ac776b343dd398d.svg",
-    "main.725bcb8b.css.map": "/portfolio/static/css/main.725bcb8b.css.map",
-    "main.697392fe.js.map": "/portfolio/static/js/main.697392fe.js.map",
+    "main.7bd7a8f6.css.map": "/portfolio/static/css/main.7bd7a8f6.css.map",
+    "main.3b416c3d.js.map": "/portfolio/static/js/main.3b416c3d.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.725bcb8b.css",
-    "static/js/main.697392fe.js"
+    "static/css/main.7bd7a8f6.css",
+    "static/js/main.3b416c3d.js"
   ]
 }
