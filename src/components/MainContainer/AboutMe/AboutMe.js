@@ -6,9 +6,10 @@ const AboutMe = forwardRef((props, ref) => {
   const darkTheme = useContext(ThemeContext);
 
   const imageStyle = {
-    
-  }
-
+    backgroundColor: darkTheme ? "#f2f2f2" : "#303030",
+    textColor: { color: darkTheme ? "#000000" : "#ffffff" },
+  };
+  const btnStyle = darkTheme ? "btn-dark" : "btn-light";
   const styles = {
     backgroundColor: darkTheme ? "#292929" : "#e7f0f8ef",
     textcolor: {
@@ -42,19 +43,24 @@ const AboutMe = forwardRef((props, ref) => {
         <div className="blob3"></div>
         <div className="blob4"></div>
         <div className="image">
-          <section id="card1" className="card">
+          <section id="card1" className="card" style={imageStyle}>
             <img
               src={require("./../../../Assets/about-photo.jpeg")}
               alt="Not found!"
             ></img>
-            <div className="card__content">
-              <p className="card__title">Vikas Saini</p>
-              <p className="card__description">
+            <div className="card__content" style={imageStyle}>
+              <p className="card__title" style={imageStyle.textColor}>
+                Vikas Saini
+              </p>
+              <p className="card__description" style={imageStyle.textColor}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 vitae justo vel lorem tincidunt ultrices at non nunc. Donec in
                 sapien viverra, tincidunt augue id, efficitur massa.
               </p>
-              <button className="btn btn-dark btn-lg info-btn">
+              <button
+                onClick={() => props.onComponentClick(props.educationRef)}
+                className={"btn info-btn " + btnStyle}
+              >
                 More Info
               </button>
             </div>

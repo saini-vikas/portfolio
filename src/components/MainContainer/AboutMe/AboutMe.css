@@ -27,7 +27,10 @@
 }
 
 .image {
-  width: 620px;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 600px;
+  width: 35%;
   aspect-ratio: 1/1;
 }
 
@@ -35,12 +38,13 @@
   display: flex;
   align-items: center;
   margin: 20px;
-  width: calc(40vw + 200px);
-  font-size: calc(1vw + 10px);
-  padding: 0 20px 0 20px;
+  width: calc(40vw + 150px);
+  font-size: calc(0.7vw + 10px);
+  padding: 0 10px 0 10px;
   border-radius: 5px;
   background: transparent;
   z-index: 2;
+  line-height: 2;
 }
 
 .about p {
@@ -55,7 +59,7 @@
   width: 98%;
   margin: 50px 0 50px 0;
   color: #272a3b;
-  gap: 50px;
+  gap: 20px;
 }
 
 .blob {
@@ -110,32 +114,29 @@ section.card {
   position: relative;
   width: 95%;
   height: 95%;
-  background-color: #f5f5f5;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.125);
 }
 .card img {
   width: 97%;
   height: 97%;
   border-radius: 7px;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.125);
 }
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0 8px 16px #000000;
-  background-color: #f2f2f2;
-  color: #ffffff;
+  box-shadow: 5px 8px 16px rgb(80, 80, 80);
 }
 
 .card__content {
   display: flex;
   flex-direction: column;
-  color: #000000;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -143,10 +144,10 @@ section.card {
   height: 100%;
   padding: 8%;
   box-sizing: border-box;
-  background-color: #f5f5f5;
+  border-radius: 7px;
   transform: rotateX(-90deg);
   transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.125);
 }
 
 .card:hover .card__content {
@@ -156,25 +157,28 @@ section.card {
 .card__title {
   margin: 0;
   padding-left: 5px;
-  font-size: 54px;
-  color: #000000;
+  font-size: calc(1.7vw + 24px);
   font-weight: 700;
 }
 
 .card__description {
   margin: 10px 0 0;
-  font-size: 32px;
-  color: #000000;
+  font-size: calc(0.7vw + 10px);
   line-height: 1.4;
 }
 
 .info-btn {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 50%;
   align-self: flex-end;
 }
 .info-btn:active {
   transform: scale(0.95);
+}
+@media screen and (max-width: 1400px) {
+  .about {
+    line-height: 1.7;
+  }
 }
 
 @media screen and (max-width: 1110px) {
@@ -187,15 +191,26 @@ section.card {
   .aboutme {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 15px;
   }
   .about {
     width: calc(70vw + 100px);
     font-size: calc(0.7vw + 14px);
+    line-height: 1.4;
   }
-  .card {
-    width: calc(70vw + 80px);
-    height: calc(70vw + 80px);
+  .image {
+    min-width: 200px;
+    width: 95vw;
+    justify-content: center;
+  }
+  .card__content {
+    justify-content: space-around;
+  }
+  .card__title {
+    font-size: calc(2.2vw + 28px);
+  }
+  .card__description {
+    font-size: calc(1.2vw + 12px);
   }
   .blob {
     top: 5%;
@@ -241,10 +256,13 @@ section.card {
     font-size: 16px;
     margin: 10px;
   }
-  .card {
-    width: 90vw;
-    height: 90vw;
+  .card__title {
+    font-size: calc(2vw + 22px);
   }
+  .card__description {
+    font-size: calc(1vw + 12px);
+  }
+
   .blob {
     top: calc(1vw + 40px);
     left: 50vw;

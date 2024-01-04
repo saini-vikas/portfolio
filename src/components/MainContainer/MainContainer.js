@@ -83,6 +83,8 @@ export default function MainContainer() {
           id="aboutme"
           ref={aboutComponentRef}
           tagline={tagLines.aboutme}
+          onComponentClick={handleScrollToComponent}
+          educationRef={resumeComponentRef}
         />
         <Resume
           id="resume"
