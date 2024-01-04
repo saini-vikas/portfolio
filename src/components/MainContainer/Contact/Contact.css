@@ -61,10 +61,6 @@
   align-items: center;
 }
 .link-2 i {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(135deg, #f06ed1, #3982e2);
   font-size: 48px;
 }
 .link-2 {
