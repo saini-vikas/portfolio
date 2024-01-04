@@ -159,10 +159,14 @@ section.card {
   padding-left: 5px;
   font-size: calc(1.7vw + 24px);
   font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ec21bd, #2458dc);
 }
 
 .card__description {
-  margin: 10px 0 0;
+  margin: 10px 0 0px 10px;
   font-size: calc(0.7vw + 10px);
   line-height: 1.4;
 }

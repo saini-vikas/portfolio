@@ -15,9 +15,7 @@ const Contact = forwardRef((props, ref) => {
     btnStyle: {
       color: darkTheme ? "light" : "dark",
     },
-    iconStyle: {
-      color: darkTheme ? "#f8f8f8" : "#212529",
-    },
+
     textStyle: {
       color: darkTheme ? "#f8f8f8" : "#212529",
       fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",

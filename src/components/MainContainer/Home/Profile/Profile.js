@@ -181,7 +181,7 @@ function Profile(props) {
         </div>
         <div className="stats" style={style.statsStyle}>
           <div className="first">
-            <h3 className="main-line">8000+</h3>
+            <h3 className="main-line">12000+</h3>
             <p>Lines of code</p>
           </div>
           <div className="second">

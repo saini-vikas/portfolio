@@ -74,7 +74,7 @@
 }
 
 .timeline:nth-child(even):hover {
-  transform: rotate(5deg);
+  transform: rotate(-5deg);
 }
 .timeline:nth-child(odd):hover {
   transform: rotate(5deg);
@@ -121,6 +121,10 @@
 .timeline-content .institute {
   font-weight: bolder;
   font-size: 1.1em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ec21bd, #2458dc);
 }
 .main-timeline .timeline:nth-child(even) {
   float: right;

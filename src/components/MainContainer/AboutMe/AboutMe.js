@@ -49,19 +49,22 @@ const AboutMe = forwardRef((props, ref) => {
               alt="Not found!"
             ></img>
             <div className="card__content" style={imageStyle}>
-              <p className="card__title" style={imageStyle.textColor}>
-                Vikas Saini
+              <p className="card__title">Vikas Saini</p>
+
+              <p className="card__description" style={imageStyle.textColor}>
+                <i className="bi bi-check-circle-fill"></i> AI/ML Developer
               </p>
               <p className="card__description" style={imageStyle.textColor}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                vitae justo vel lorem tincidunt ultrices at non nunc. Donec in
-                sapien viverra, tincidunt augue id, efficitur massa.
+                <i className="bi bi-check-circle-fill"></i> Full-stack Developer
+              </p>
+              <p className="card__description" style={imageStyle.textColor}>
+                <i className="bi bi-check-circle-fill"></i> Software Developer
               </p>
               <button
                 onClick={() => props.onComponentClick(props.educationRef)}
                 className={"btn info-btn " + btnStyle}
               >
-                More Info
+                <i class="bi bi-info-circle"></i> More Info
               </button>
             </div>
           </section>
