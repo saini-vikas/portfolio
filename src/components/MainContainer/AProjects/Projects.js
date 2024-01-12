@@ -1,5 +1,7 @@
 import React, { useRef, forwardRef, useContext } from "react";
 import { ThemeContext } from "../MainContainer";
+import "./Project.css";
+import ProjectCard from "./ProjectCard";
 
 const acedamic_projects = [
   {
@@ -84,6 +86,18 @@ const Projects = forwardRef((props, refs) => {
         <p className="contact-tagline" style={style.tagLine}>
           {props.tagline}
         </p>
+      </div>
+      <div className="projects">
+        {acedamic_projects.map((p) => (
+          <ProjectCard
+            key={p.title}
+            title={p.title}
+            description={p.description}
+            stack={p.stack}
+            completion={p.completion}
+            date={p.date}
+          />
+        ))}
       </div>
     </div>
   );

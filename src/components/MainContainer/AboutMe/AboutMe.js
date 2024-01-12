@@ -64,7 +64,7 @@ const AboutMe = forwardRef((props, ref) => {
                 onClick={() => props.onComponentClick(props.educationRef)}
                 className={"btn info-btn " + btnStyle}
               >
-                <i class="bi bi-info-circle"></i> More Info
+                <i className="bi bi-info-circle"></i> More Info
               </button>
             </div>
           </section>

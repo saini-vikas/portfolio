@@ -1,0 +1,7 @@
+.project-card {
+  display: flex;
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  border-color: 1px solid black;
+}
