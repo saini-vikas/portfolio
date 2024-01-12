@@ -7,6 +7,7 @@ import Contact from "./Contact/Contact";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import MyNavbar from "../MyNavbar/MyNavbar";
 import "./MainContainer.css";
+import Projects from "./AProjects/Projects";
 
 export const ThemeContext = createContext(false);
 
@@ -17,6 +18,8 @@ export default function MainContainer() {
   const tagLines = {
     aboutme:
       "From passion to profession: Illuminating the essence of who I am.",
+    projects:
+      "Unveiling Digital Creations: Where Innovation Meets Implementation.",
     education:
       "Learning to code, coding to learn: How education paved the path to my digital ambitions.",
     skills: "From Vision to Execution: Skills that Bring Ideas to Life.",
@@ -28,6 +31,7 @@ export default function MainContainer() {
   const resumeComponentRef = useRef();
   const skillsComponentRef = useRef();
   const contactComponentRef = useRef();
+  const projectsComponentRef = useRef();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -85,6 +89,11 @@ export default function MainContainer() {
           tagline={tagLines.aboutme}
           onComponentClick={handleScrollToComponent}
           educationRef={resumeComponentRef}
+        />
+        <Projects
+          id="projects"
+          ref={projectsComponentRef}
+          tagline={tagLines.projects}
         />
         <Resume
           id="resume"
