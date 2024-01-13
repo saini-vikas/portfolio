@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.projects:hover > .project-card:not(:hover) {
+.projects:hover > a:not(:hover) {
   filter: blur(3px);
   opacity: 0.9;
 }

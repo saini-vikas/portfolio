@@ -5,6 +5,7 @@
   width: calc(8vw + 200px);
   aspect-ratio: 1/1.1;
   border-radius: 16px;
+  cursor: pointer;
   border: 1px solid rgb(183, 180, 180);
   transition: 300ms ease-in-out;
 }

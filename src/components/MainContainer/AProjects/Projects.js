@@ -12,6 +12,7 @@ const acedamic_projects = [
     completion: 20,
     date: "2024",
     image: require("./../../../Assets/mern.png"),
+    link: "https://github.com/saini-vikas/Ecommerce-MERN",
   },
   {
     title: "Expense Tracking App",
@@ -21,6 +22,7 @@ const acedamic_projects = [
     completion: 100,
     date: "2023",
     image: require("./../../../Assets/expense.png"),
+    link: "https://github.com/saini-vikas/Monthly-Expense-App",
   },
   {
     title: "Search Engine",
@@ -30,6 +32,7 @@ const acedamic_projects = [
     completion: 100,
     date: "2023",
     image: require("./../../../Assets/search-engine.png"),
+    link: "https://github.com/saini-vikas/search-engine",
   },
   {
     title: "Movies Database",
@@ -39,6 +42,7 @@ const acedamic_projects = [
     completion: 100,
     date: "2022",
     image: require("./../../../Assets/portfolio.png"),
+    link: "https://github.com/saini-vikas/MovieServer_Django",
   },
   {
     title: "Profolio Website",
@@ -48,6 +52,7 @@ const acedamic_projects = [
     completion: 100,
     date: "2023",
     image: require("./../../../Assets/portfolio.png"),
+    link: "https://github.com/saini-vikas/portfolio",
   },
   {
     title: "Weather App-ios",
@@ -57,6 +62,7 @@ const acedamic_projects = [
     completion: 100,
     date: "2021",
     image: require("./../../../Assets/portfolio.png"),
+    link: "https://github.com/saini-vikas/Weather-App---Iphone",
   },
   {
     title: "Electronics Store",
@@ -66,6 +72,7 @@ const acedamic_projects = [
     completion: 100,
     date: "2019",
     image: require("./../../../Assets/javafx.png"),
+    link: "https://github.com/saini-vikas/electronicstore_inventory",
   },
 ];
 
@@ -96,6 +103,7 @@ const Projects = forwardRef((props, refs) => {
             completion={p.completion}
             date={p.date}
             image={p.image}
+            link={p.link}
           />
         ))}
       </div>
