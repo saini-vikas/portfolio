@@ -1,0 +1,19 @@
+.stack-pill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  padding: 2px 12px;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.stack-name {
+  margin: 0px;
+  font-size: 12px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #d46abb, #5579d5);
+}

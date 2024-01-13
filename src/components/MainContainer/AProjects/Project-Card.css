@@ -4,7 +4,8 @@
   position: relative;
   width: calc(8vw + 200px);
   aspect-ratio: 1/1.1;
-  border-radius: 20px;
+  border-radius: 16px;
+  border: 1px solid rgb(183, 180, 180);
   transition: 300ms ease-in-out;
 }
 .project-card:hover {
@@ -17,42 +18,42 @@
   object-position: center;
   overflow: hidden;
 }
-.project-year {
-  display: flex;
-  flex-direction: row;
-  height: calc(3.2vw + 10px);
-  aspect-ratio: 1/1;
-  position: absolute;
-  top: calc((((8vw + 200px) * 1.1) - (0.7vw)) / 2);
-  right: 10px;
-  border-radius: 50px;
-  justify-content: center;
-  align-items: center !important;
-}
 
 .project-image > img {
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
   width: 100%;
   height: 100%;
 }
 
 .project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ffffff;
   flex: 1;
   width: 100%;
   padding: 10px 10px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 15px 15px;
 }
 
 .project-title {
-  font-size: calc(1vw + 6px);
+  font-size: calc(1vw + 8px);
   margin: 0px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #ec21bd, #2458dc);
 }
 
-.pro-year {
-  font-size: calc(0.7vw + 6px);
-  margin: 0px;
+.project-stack {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress {
+  width: 100%;
 }
