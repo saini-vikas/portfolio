@@ -9,11 +9,16 @@
 
 .projects {
   display: flex;
-  width: auto;
+  width: 90%;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
   padding: 50px 0;
   justify-content: center;
   align-items: center;
+}
+
+.projects:hover > .project-card:not(:hover) {
+  filter: blur(3px);
+  opacity: 0.9;
 }

@@ -1,10 +1,14 @@
-import React, { useRef, forwardRef, useContext } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../MainContainer";
 import "./Project-Card.css";
 
 const ProjectCard = (props) => {
   const darkTheme = useContext(ThemeContext);
   const style = {
+    year: {
+      backgroundColor: "#ffc106",
+      color: "#212529",
+    },
     textColor: {
       color: darkTheme ? "#f8f8f8" : "#212529",
     },
@@ -12,15 +16,25 @@ const ProjectCard = (props) => {
       boxShadow: darkTheme
         ? "5px 5px 10px rgba(2, 2, 2, 0.6)"
         : "5px 5px 10px rgba(156, 154, 154 0.6)",
-      border: darkTheme
-        ? "1px solid rgba(136, 130, 122, 0.3)"
-        : "1px solid rgba(40, 40, 40, 0.2)",
+    },
+    info: {
+      backgroundColor: darkTheme ? "#212529" : "#ffffff",
     },
   };
   return (
     <div className="project-card" style={style.shadowStyle}>
-      <h4>{props.title}</h4>
-      <p>{props.completion}</p>
+      <div className="project-year" style={style.year}>
+        <h6 className="pro-year">
+          <strong>{props.date}</strong>
+        </h6>
+      </div>
+      <div className="project-image">
+        <img src={props.image} alt={props.title} />
+      </div>
+      <div className="project-info" style={style.info}>
+        <h6 className="project-title">{props.title}</h6>
+        <p style={style.textColor}>{props.completion}</p>
+      </div>
     </div>
   );
 };
