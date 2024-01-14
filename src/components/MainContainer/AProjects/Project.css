@@ -18,7 +18,9 @@
   align-items: center;
 }
 
-.projects:hover > a:not(:hover) {
-  filter: blur(3px);
-  opacity: 0.9;
+@media screen and (min-width: 800px) {
+  .projects:hover > a:not(:hover) {
+    filter: blur(3px);
+    opacity: 0.9;
+  }
 }

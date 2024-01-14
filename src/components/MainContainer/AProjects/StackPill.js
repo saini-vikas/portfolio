@@ -6,12 +6,16 @@ const StackPill = (props) => {
   const darkTheme = useContext(ThemeContext);
   const style = {
     bg: {
-      backgroundColor: darkTheme ? "#f2f2f2" : "#f5f5f5",
+      color: props.color,
+      border: "1px solid" + props.color,
+      backgroundColor: "#ffffff",
     },
   };
   return (
     <div className="stack-pill" style={style.bg}>
-      <p className="stack-name">{props.name}</p>
+      <p className="stack-name">
+        <strong>{props.name}</strong>
+      </p>
     </div>
   );
 };

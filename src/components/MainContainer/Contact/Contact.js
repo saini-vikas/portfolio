@@ -23,9 +23,7 @@ const Contact = forwardRef((props, ref) => {
       fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
     },
     shadowStyle: {
-      boxShadow: darkTheme
-        ? "5px 5px 10px rgba(2, 2, 2, 0.6)"
-        : "5px 5px 10px rgba(156, 154, 154 0.6)",
+      boxShadow: darkTheme ? "5px 10px 10px #121212" : "5px 10px 10px #aaaaaa",
       border: darkTheme
         ? "1px solid rgba(136, 130, 122, 0.3)"
         : "1px solid rgba(40, 40, 40, 0.2)",

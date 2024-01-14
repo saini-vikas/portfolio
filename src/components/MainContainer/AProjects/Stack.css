@@ -12,8 +12,4 @@
 .stack-name {
   margin: 0px;
   font-size: 12px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #d46abb, #5579d5);
 }

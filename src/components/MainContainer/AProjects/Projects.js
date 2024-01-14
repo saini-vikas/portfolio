@@ -1,6 +1,13 @@
 import React, { useRef, forwardRef, useContext } from "react";
 import { ThemeContext } from "../MainContainer";
 import "./Project.css";
+import Ecommerce from "./../../../Assets/mern.svg";
+import Expense from "./../../../Assets/expense.svg";
+import Search from "./../../../Assets/search.svg";
+import Movie from "./../../../Assets/movie.svg";
+import Portfolio from "./../../../Assets/portfolio.svg";
+import Weather from "./../../../Assets/weather.svg";
+import Electronic from "./../../../Assets/electronic.svg";
 import ProjectCard from "./ProjectCard";
 
 const acedamic_projects = [
@@ -11,8 +18,9 @@ const acedamic_projects = [
     stack: ["Node.js", "React.js", "Express.js", "MongoDB", "Redux", "MUI"],
     completion: 20,
     date: "2024",
-    image: require("./../../../Assets/mern.png"),
+    image: Ecommerce,
     link: "https://github.com/saini-vikas/Ecommerce-MERN",
+    color: "#7e57c2",
   },
   {
     title: "Expense Tracking App",
@@ -21,8 +29,9 @@ const acedamic_projects = [
     stack: ["Node.js", "React.js", "Express.js", "Charts.js", "SQlite3"],
     completion: 100,
     date: "2023",
-    image: require("./../../../Assets/expense.png"),
+    image: Expense,
     link: "https://github.com/saini-vikas/Monthly-Expense-App",
+    color: "#ff725e",
   },
   {
     title: "Search Engine",
@@ -31,8 +40,9 @@ const acedamic_projects = [
     stack: ["Node.js", "Express.js", "Crawler.js", "MongoDB", "Elasticlunr"],
     completion: 100,
     date: "2023",
-    image: require("./../../../Assets/search-engine.png"),
+    image: Search,
     link: "https://github.com/saini-vikas/search-engine",
+    color: "#407bff",
   },
   {
     title: "Movies Database",
@@ -41,8 +51,9 @@ const acedamic_projects = [
     stack: ["Django", "SQlite3", "Bootstrap", "HTML", "CSS"],
     completion: 100,
     date: "2022",
-    image: require("./../../../Assets/portfolio.png"),
+    image: Movie,
     link: "https://github.com/saini-vikas/MovieServer_Django",
+    color: "#ffc100",
   },
   {
     title: "Profolio Website",
@@ -51,8 +62,9 @@ const acedamic_projects = [
     stack: ["Node.js", "React.js", "Bootstrap", "Email.js", "CSS"],
     completion: 100,
     date: "2023",
-    image: require("./../../../Assets/portfolio.png"),
+    image: Portfolio,
     link: "https://github.com/saini-vikas/portfolio",
+    color: "#92e3a9",
   },
   {
     title: "Weather App-ios",
@@ -61,8 +73,9 @@ const acedamic_projects = [
     stack: ["Swift", "SwiftUI", "Weather-API", "X-code", "ios App"],
     completion: 100,
     date: "2021",
-    image: require("./../../../Assets/portfolio.png"),
+    image: Weather,
     link: "https://github.com/saini-vikas/Weather-App---Iphone",
+    color: "#90caf9",
   },
   {
     title: "Electronics Store",
@@ -71,8 +84,9 @@ const acedamic_projects = [
     stack: ["Java", "JavaFX", "OOP", "User Interface"],
     completion: 100,
     date: "2019",
-    image: require("./../../../Assets/javafx.png"),
+    image: Electronic,
     link: "https://github.com/saini-vikas/electronicstore_inventory",
+    color: "#ff81ae",
   },
 ];
 
@@ -104,6 +118,7 @@ const Projects = forwardRef((props, refs) => {
             date={p.date}
             image={p.image}
             link={p.link}
+            color={p.color}
           />
         ))}
       </div>
