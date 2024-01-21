@@ -73,6 +73,7 @@ export default function MainContainer() {
           onComponentClick={handleScrollToComponent}
           homeRef={homeComponentRef}
           aboutRef={aboutComponentRef}
+          projectRef={projectsComponentRef}
           skillsRef={skillsComponentRef}
           resumeRef={resumeComponentRef}
           contactRef={contactComponentRef}
