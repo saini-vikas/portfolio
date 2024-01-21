@@ -50,6 +50,7 @@ export default function MyNavbar(props) {
       const componentRefs = [
         props.homeRef,
         props.aboutRef,
+        props.projectRef,
         props.resumeRef,
         props.skillsRef,
         props.contactRef,
@@ -74,6 +75,7 @@ export default function MyNavbar(props) {
   }, [
     props.homeRef,
     props.aboutRef,
+    props.projectRef,
     props.resumeRef,
     props.skillsRef,
     props.contactRef,
@@ -179,6 +181,23 @@ export default function MyNavbar(props) {
                     <FontAwesomeIcon icon={faAddressCard} size="lg" />
                   ) : (
                     "About Me"
+                  )}
+                </Navbar.Text>
+                <Navbar.Text
+                  className={
+                    activeComponent === props.projectRef ? "active" : ""
+                  }
+                  onClick={() => {
+                    props.onComponentClick(props.projectRef);
+                    setShow(false);
+                    setActiveComponent(props.projectRef);
+                  }}
+                >
+                  {icons.addressCard}{" "}
+                  {showIcon ? (
+                    <FontAwesomeIcon icon={faAddressCard} size="lg" />
+                  ) : (
+                    "Projects"
                   )}
                 </Navbar.Text>
                 <Navbar.Text
