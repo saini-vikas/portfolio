@@ -6,6 +6,7 @@ import {
   faAddressCard,
   faUserGraduate,
   faCode,
+  faBriefcase,
   faMessage,
   faCircleHalfStroke,
 } from "@fortawesome/free-solid-svg-icons";
@@ -37,7 +38,7 @@ export default function MyNavbar(props) {
   }, []);
 
   useEffect(() => {
-    if (windowWidth >= 576 && windowWidth <= 750) {
+    if (windowWidth >= 576 && windowWidth <= 850) {
       setShowIcon(true);
     } else {
       setShowIcon(false);
@@ -195,7 +196,7 @@ export default function MyNavbar(props) {
                 >
                   {icons.addressCard}{" "}
                   {showIcon ? (
-                    <FontAwesomeIcon icon={faAddressCard} size="lg" />
+                    <FontAwesomeIcon icon={faBriefcase} size="lg" />
                   ) : (
                     "Projects"
                   )}
