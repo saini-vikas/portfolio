@@ -90,7 +90,7 @@ const acedamic_projects = [
   },
 ];
 
-const Projects = forwardRef((props, refs) => {
+const Projects = forwardRef((props, ref) => {
   const darkTheme = useContext(ThemeContext);
   const style = {
     tagLine: {
@@ -98,7 +98,7 @@ const Projects = forwardRef((props, refs) => {
     },
   };
   return (
-    <div className="project-container">
+    <div className="project-container" id={props.id || ""} ref={ref}>
       <div className="contact-heading">
         <h1 className="contact-heading-title" style={style.tagLine}>
           Projects
