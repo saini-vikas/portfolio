@@ -1,27 +1,34 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fc935b44.css",
-    "main.js": "/portfolio/static/js/main.744f2d6f.js",
+    "main.css": "/portfolio/static/css/main.a1ef8ac3.css",
+    "main.js": "/portfolio/static/js/main.b0783d77.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/about-photo.jpeg": "/portfolio/static/media/about-photo.a4c4a02349036a90cb1d.jpeg",
     "static/media/profile.png": "/portfolio/static/media/profile.ead3a5bd2e36190fd558.png",
     "static/media/skills2.svg": "/portfolio/static/media/skills2.c3bbca72ec7a7d23e0f055bedf44a1a6.svg",
+    "static/media/mern.svg": "/portfolio/static/media/mern.248167612108770628d3a89ed7ae46ca.svg",
+    "static/media/weather.svg": "/portfolio/static/media/weather.e4b13a0577f5d4b71ab5026bff2baf2e.svg",
+    "static/media/movie.svg": "/portfolio/static/media/movie.48d3dfcf83d4db096fe0c5b58d746322.svg",
     "static/media/blury2.svg": "/portfolio/static/media/blury2.ba7b254b07a64f3f5c05.svg",
     "static/media/Vikas_Saini_CV.pdf": "/portfolio/static/media/Vikas_Saini_CV.75e45bf37552296f8732.pdf",
     "static/media/ccchaos.svg": "/portfolio/static/media/ccchaos.c8767349c19defccbc5e.svg",
     "static/media/next.png": "/portfolio/static/media/next.7fc4f4a57805e6373d97.png",
+    "static/media/search.svg": "/portfolio/static/media/search.c72cac532828c788982ec3048da009de.svg",
+    "static/media/expense.svg": "/portfolio/static/media/expense.cfc5d4e270cbaf859331a16083baa2a5.svg",
+    "static/media/portfolio.svg": "/portfolio/static/media/portfolio.dd52d0cb525abbf22fafb3d55753d675.svg",
+    "static/media/electronic.svg": "/portfolio/static/media/electronic.fbdc8fc3ab6542ea2b6f0351bf98c4c4.svg",
     "static/media/blury.svg": "/portfolio/static/media/blury.4cd86076fb8723cef61e.svg",
     "static/media/graph.svg": "/portfolio/static/media/graph.8f7a391d1901f99c6f7c.svg",
     "static/media/blob3.svg": "/portfolio/static/media/blob3.fca2c10b294e7d77b0c2.svg",
     "index.html": "/portfolio/index.html",
     "static/media/blob2.svg": "/portfolio/static/media/blob2.667fe3b2c259c3a3e4c4.svg",
     "static/media/blob.svg": "/portfolio/static/media/blob.c3092ac776b343dd398d.svg",
-    "main.fc935b44.css.map": "/portfolio/static/css/main.fc935b44.css.map",
-    "main.744f2d6f.js.map": "/portfolio/static/js/main.744f2d6f.js.map",
+    "main.a1ef8ac3.css.map": "/portfolio/static/css/main.a1ef8ac3.css.map",
+    "main.b0783d77.js.map": "/portfolio/static/js/main.b0783d77.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc935b44.css",
-    "static/js/main.744f2d6f.js"
+    "static/css/main.a1ef8ac3.css",
+    "static/js/main.b0783d77.js"
   ]
 }
