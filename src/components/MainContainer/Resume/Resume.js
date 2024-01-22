@@ -23,7 +23,7 @@ const Resume = forwardRef((props, ref) => {
       Location: "Ottawa",
       Program: "Bachelor of Computer Science",
       Stream: "Artificial Intelligence and Machine Learning",
-      CGPA: "10.1/12.0",
+      CGPA: "10.6/12.0",
       Award: "Entrance Scholarship Award",
       Year: "2023",
     },
