@@ -38,7 +38,7 @@ const acedamic_projects = [
     description:
       "A Node.js and Express.js-powered search engine, seamlessly integrating MongoDB for efficient data storage. Leveraging the capabilities of crawler.js and Cheerio, the system autonomously crawls fruit and book websites, extracting valuable data stored in MongoDB. Users can initiate searches, receiving prompt responses featuring matching results and relevant URLs. The incorporation of Bootstrap ensures a visually appealing and responsive user interface, enhancing the overall search experience. This project harmoniously combines web crawling technology, database management, and user-friendly design to deliver a powerful and versatile search engine for diverse information retrieval needs.",
     stack: ["Node.js", "Express.js", "Crawler.js", "MongoDB", "Elasticlunr"],
-    completion: 100,
+    completion: 95,
     date: "2023",
     image: Search,
     link: "https://github.com/saini-vikas/search-engine",
