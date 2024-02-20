@@ -1,6 +1,6 @@
 ## This is my portfolio website.
-# This portfiloio built using React.js and styled with bootstrap 5.0.
-# There are mainly 6 sections of this portfolio:
+### This portfiloio built using React.js and styled with bootstrap 5.0.
+### There are mainly 6 sections of this portfolio:
 1. Home
 2. About me
 3. Projects
