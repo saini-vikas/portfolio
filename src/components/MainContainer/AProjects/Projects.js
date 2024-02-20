@@ -16,7 +16,7 @@ const acedamic_projects = [
     description:
       "A dynamic MERN (MongoDB, Express.js, React, Node.js) stack eCommerce website project, leveraging Material-UI (MUI) for sleek and responsive design. This project seamlessly integrates Redux for robust state management, ensuring an efficient and scalable application. Enjoy the power of MongoDB for flexible data storage, Express.js for streamlined server-side development, React for a dynamic and user-friendly front end, and Node.js for a fast and scalable backend. Elevate your online shopping experience with a modern, feature-rich platform, combining the strengths of MERN, MUI, and Redux for a seamless and visually appealing e-commerce solution.",
     stack: ["Node.js", "React.js", "Express.js", "MongoDB", "Redux", "MUI"],
-    completion: 20,
+    completion: 30,
     date: "2024",
     image: Ecommerce,
     link: "https://github.com/saini-vikas/Ecommerce-MERN",
@@ -49,7 +49,7 @@ const acedamic_projects = [
     description:
       "A Movies Database App using Python, meticulously crafted on the Django framework. This IMDb-inspired platform offers comprehensive movie details, including actors, directors, runtime, release date, and more. Users can curate a personalized watchlist, add reviews, and engage in discussions, while administrators wield the power to manage movie data. The app prioritizes user security with authentication, enabling seamless sign-in and signup. Users can also fine-tune their profiles and review information. Elevating the experience, the app employs recommendation algorithms like user-based and item-based collaborative filtering for personalized movie suggestions, all backed by SQLite3 for robust data management via Django models.",
     stack: ["Django", "SQlite3", "Bootstrap", "HTML", "CSS"],
-    completion: 100,
+    completion: 80,
     date: "2022",
     image: Movie,
     link: "https://github.com/saini-vikas/MovieServer_Django",
@@ -82,7 +82,7 @@ const acedamic_projects = [
     descripttion:
       "A Java-based digital commerce Electronic Store App, skillfully developed using JavaFX for a user-friendly interface. Embracing the principles of Object-Oriented Programming, the app features a well-structured hierarchy of classes and subclasses for efficient product management. The intuitive UI elegantly displays the inventory, shopping cart, cart items, recent purchases, and total store revenue. Experience seamless navigation as you explore a rich inventory of electronic products, add items to your cart, and track purchases, all encapsulated within a robust OOP design and visually appealing JavaFX interface.",
     stack: ["Java", "JavaFX", "OOP", "User Interface"],
-    completion: 100,
+    completion: 90,
     date: "2019",
     image: Electronic,
     link: "https://github.com/saini-vikas/electronicstore_inventory",
