@@ -4,12 +4,18 @@ import emailjs from "@emailjs/browser";
 import "react-tippy/dist/tippy.css";
 import { Tooltip } from "react-tippy";
 import { ThemeContext } from "../MainContainer";
+import EmailModal from "./EmailModal";
 
 const Contact = forwardRef((props, ref) => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
   const [message, setMessage] = React.useState("");
+  const [showModal, setShowModal] = React.useState(false);
+  const [modalMessage, setModalMessage] = React.useState("");
   const darkTheme = useContext(ThemeContext);
+
+  const handleClose = () => setShowModal(false);
 
   const style = {
     btnStyle: {
@@ -48,6 +54,7 @@ const Contact = forwardRef((props, ref) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
     if (name !== "" && email !== "" && message !== "") {
       emailjs
         .sendForm(
@@ -58,13 +65,16 @@ const Contact = forwardRef((props, ref) => {
         )
         .then(
           (result) => {
-            console.log(result.status);
             if (result.status === 200) {
-              window.alert("Email sent successfully!");
+              setLoading(false);
+              setModalMessage("Email sent successfully!");
+              setShowModal(true);
             }
           },
           (error) => {
-            console.log(error.text);
+            setLoading(false);
+            setModalMessage("Failed to send email.");
+            setShowModal(true);
           }
         );
       setEmail("");
@@ -159,6 +169,14 @@ const Contact = forwardRef((props, ref) => {
             onSubmit={sendEmail}
           >
             <div className="contact-form-info">
+              {loading && (
+                <div className="loading-overlay">
+                  <span
+                    className="spinner-border spinner-border-sm loading"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              )}
               <div className="mb-3 row">
                 <label
                   htmlFor="staticEmail"
@@ -232,6 +250,12 @@ const Contact = forwardRef((props, ref) => {
             </div>
           </form>
         </div>
+        <EmailModal
+          show={showModal}
+          handleClose={handleClose}
+          title="Notification"
+          message={modalMessage}
+        />
       </div>
       <hr className="line-3" style={style.iconStyle}></hr>
       <span style={style.footerStyle}>
